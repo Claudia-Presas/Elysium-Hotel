@@ -1,141 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- LINK BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary navbar">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="/./multimedia/img/logo-joaquina.png" alt="logo-la-joaquina"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse link-navbar" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/servicios.html">SERVICIOS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/tarifas.html">TARIFAS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/pages/reservas.html">CONTACT</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true"></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          </header>
-         
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="/./multimedia/img/logo-joaquina.png"
+              alt="logo-la-joaquina"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse link-navbar" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/servicios.html">SERVICIOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/tarifas.html">TARIFAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/galeria.html">GALERIA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/reservas.html">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-        <div class="banner-container">
-          <img src="./multimedia/img/banner-1.jpg" alt="">
-          <section class="banner-info">
-          <h3>TEXTO TEXTO</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          <a href="./pages/reservas.html">Hace tu reserva</a>
-        </section>
-        </div>
-          
-    <main>
-      <!-- <div class="carrusel-container">
-        <div class="item-carrusel" id="item-1">
-        <div class="img-carrusel" id="img-1">
-          <img src="/multimedia/carrusel/slaider-1.jpg" alt="">
-        </div>
-          <div class="direction-carrusel">
-             <a href="#item-3">
-              <i><iconify-icon icon="fa6-solid:chevron-left"></iconify-icon></i>
-            </a>
-             <a href="#item-2">
-              <i><iconify-icon icon="fa6-solid:chevron-right"></iconify-icon></iconify-icon></i>
-            </a>
-        </div>
-      </div>
-      <div class="item-carrusel" id="item-2">
-        <div class="img-carrusel" id="img-2">
-          <img src="/multimedia/carrusel/slaider-2.jpg" alt="">
-        </div>
-          <div class="direction-carrusel">
-            <a href="#item-1">
-              <i><iconify-icon icon="fa6-solid:chevron-left"></iconify-icon></i>
-            </a>
-             <a href="#item-3">
-              <i><iconify-icon icon="fa6-solid:chevron-right"></iconify-icon></iconify-icon></i>
-            </a>
-        </div>
-      </div>
-      <div class="item-carrusel" id="item-3">
-        <div class="img-carrusel" id="img-3">
-          <img src="/multimedia/carrusel/slaider-3.jpg" alt="">
-        </div>
-          <div class="direction-carrusel">
-            <a href="#item-2">
-              <i><iconify-icon icon="fa6-solid:chevron-left"></iconify-icon></i>
-            </a>
-             <a href="#item-1">
-              <i><iconify-icon icon="fa6-solid:chevron-right"></iconify-icon></iconify-icon></i>
-            </a>
-        </div>
-      </div>
-    </div>  -->
-        <!-- <section class="slider">
-        <ul class="slider">
-          <li >
-            <img src="./multimedia/slaider-1.jpg" alt="chica-relajada-en-la-playa">
-          </li>
-          <li>
-           <img src="./multimedia/slaider-2.jpg" alt="parte-del-hotel">
-          </li>
-          <li>
-            <img src="./multimedia/slaider-3.jpg" alt="vista-a-la-playa">
-          </li>
-          <li>
-            <img src="./multimedia/slaider-4.jpg" alt="vista-a-la-playa">
-          </li>
-        </ul>
-      </section> 
+    <div class="banner-container">
+      <img src="./multimedia/img/banner-1.jpg" alt="" />
+      <section class="banner-info">
+        <h3>TEXTO TEXTO</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        <a href="./pages/reservas.html">Hace tu reserva</a>
+      </section>
+    </div>
 
-      <section>
-        <h3>Soñalo, nosotros te lo cumplimos</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis </p>
-        </section>-->
-      
-       
-    </main>
+    <main></main>
     <footer>
       <h5>NUESTRAS REDES SOCIALES</h5>
       <ul>
-        <li><a href="#"><iconify-icon icon="skill-icons:twitter"></iconify-icon></a>
+        <li>
+          <a href="#"
+            ><iconify-icon icon="skill-icons:twitter"></iconify-icon
+          ></a>
         </li>
-        <li><a href="#"><iconify-icon icon="skill-icons:instagram"></iconify-icon></a>
+        <li>
+          <a href="#"
+            ><iconify-icon icon="skill-icons:instagram"></iconify-icon
+          ></a>
         </li>
-        <li><a href="#"><iconify-icon icon="devicon:facebook"></iconify-icon></a>
+        <li>
+          <a href="#"><iconify-icon icon="devicon:facebook"></iconify-icon></a>
         </li>
       </ul>
 
-      <p> Derechos reservados 2023</p>
-
+      <p>Derechos reservados 2023</p>
     </footer>
     <!-- SCRIP ICONIFY -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!-- SCRIP BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
