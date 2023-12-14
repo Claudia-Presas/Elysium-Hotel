@@ -159,25 +159,25 @@ main img {
 
 /* GALERIA */
 
-.container-servicios {
+.container-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1%;
+  gap: 1rem;
   padding: 20px;
-  background-color: rgba(225, 235, 136, 0.11);
+  /* background-color: rgba(225, 235, 136, 0.11); */
 }
 
-.servicios-img {
+.galeria-img {
   text-align: center;
 }
 
-.servicios-img img {
+.galeria-img img {
   max-width: 90%;
   height: auto;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.servicios-img img {
+.galeria-img img {
   animation: fade 0.7s;
 }
 
@@ -185,12 +185,17 @@ main img {
   display: none;
 }
 
-.servicios-img:hover .card-back {
+.galeria-img:hover .card-back {
   display: block;
 }
 
-.servicios-img:hover .card-front {
+.galeria-img:hover .card-front {
   display: none;
+}
+
+.container-galeria p {
+  font-size: 15px;
+  font-weight: bold;
 }
 
 /* RESERVAS */
@@ -355,7 +360,7 @@ footer p {
 }
 
 @media (max-width: 1024px) {
-  .container-servicios {
+  .container-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -391,9 +396,6 @@ footer p {
 }
 
 @media (max-width: 767px) {
-  .container-servicios {
-    grid-template-columns: 1fr;
-  }
   .banner-info h3 {
     font-size: 2rem;
   }
@@ -419,5 +421,9 @@ footer p {
     max-width: 8rem;
     padding: 0 15px;
     margin: 0;
+  }
+
+  .container-galeria {
+    grid-template-columns: 1fr;
   }
 }
