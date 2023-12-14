@@ -70,9 +70,9 @@
       <div class="form-container">
         <h2 class="contact-logo">Joaquina <span>Beach</span></h2>
         <!-- <a href="/multimedia/img/logo-joaquina.png"></a> -->
-        <section class="contac-form">
+        <section class="contact-form">
           <form action="">
-            <label class="calendario" for="Desde">
+            <label class="calendario" for="desde">
               <p>Desde</p>
               <input type="date" name="desde" id="desde" required />
             </label>
@@ -80,80 +80,100 @@
               <p>Hasta</p>
               <input type="date" name="hasta" id="hasta" required />
             </label>
-            <label for="adultos">
+            <label class="pasajeros-adultos" for="adultos">
               <p>Adultos</p>
               <input
-                id="pasajeros-adultos"
-                type="text"
+                type="number"
                 name="adultos"
                 id="adultos"
+                placeholder="0"
                 required
               />
             </label>
-            <label for="menores">
+            <label class="pasajeros-menores" for="menores">
               <p>Menores</p>
               <input
-                id="pasajeros-menores"
-                type="text"
+                type="number"
                 name="menores"
                 id="menores"
+                placeholder="0"
                 required
               />
             </label>
             <label for="nombre">
               <p>Nombre</p>
               <input
+                class="datos-personales"
                 type="text"
                 name="nombre"
                 id="nombre"
-                placeholder="nombre"
-                autocomplete="nomre"
+                placeholder="Nombre"
+                autocomplete="on"
                 required
               />
             </label>
-            <label for="phone">
+            <label for="apellido">
+              <p>Apellido</p>
+              <input
+                class="datos-personales"
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"
+                autocomplete="on"
+                required
+              />
+            </label>
+            <label for="tel">
               <p>Teléfono</p>
               <input
+                class="datos-personales"
                 type="tel"
-                name="phone"
-                id="phone"
+                name="tel"
+                id="tel"
                 pattern="{0-9}{3}-{0-9}{3}-{0-0}{4}"
                 placeholder="111-111-1111"
-                autocomplete="telefono"
+                autocomplete="on"
                 required
               />
             </label>
             <label for="email">
               <p>Email</p>
               <input
+                class="datos-personales"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="joaquinabeach@hotel.com"
-                autocomplete="email"
-                required
-              />
+                autocomplete="on"
+                required/>
+              
             </label>
-            <label for="comentarios">
+            <section class="form-grid" >
+            <label>
               <textarea
+                class="textarea"
                 name="comentarios"
                 id="comentarios"
-                cols="50"
-                rows="6"
+                cols="40"
+                rows="4"
+                placeholder="Cometarios"
               ></textarea>
-            </label>
+            </section>
+            <section class="form-grid">
             <input id="submit" type="submit" />
+          </section>
           </form>
-          <section class="contac-info">
+          <section class="contact-info">
             <h5>Contacto</h5>
             <ul>
               <li>
-                <iconify-icon icon="line-md:map-marker-filled"></iconify-icon>
+                <iconify-icon icon="line-md:map-marker-filled"></iconify-icon>Dirección
               </li>
               <li>
-                <iconify-icon icon="lets-icons:phone-fill"></iconify-icon>
+                <iconify-icon icon="lets-icons:phone-fill"></iconify-icon>Teléfono
               </li>
-              <li><iconify-icon icon="fontisto:email"></iconify-icon></li>
+              <li><iconify-icon icon="fontisto:email"></iconify-icon>Email</li>
             </ul>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p>Lorem, ipsum dolor.</p>
