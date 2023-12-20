@@ -1,0 +1,49 @@
+header {
+  background-color: white;
+  .navbar {
+    width: 100%;
+    padding: 0;
+    background-color: white;
+    .container-fluid {
+      .navbar-brand {
+        img.nav-img {
+          width: 12rem;
+          height: 6rem;
+        }
+      }
+      //
+      //   .navbar-toggler {
+      //     // type {
+      //     // }
+      //     // data-bs-toggle {
+      //     // }
+      //     // data-bs-target {
+      //     // }
+      //     // aria-controls {
+      //     // }
+      //     // aria-expanded {
+      //     // }
+      //     // aria-label {
+      //     // }
+      //     .navbar-toggler-icon {
+      //       border: none;
+      //     }
+      //   }
+      // }
+      #navbarNav {
+        .navbar-nav {
+          .nav-item {
+            .nav-link {
+              flex-grow: 0;
+              font-weight: bold;
+              color: blue;
+              &.active {
+                color: aqua;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
