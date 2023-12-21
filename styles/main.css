@@ -164,4 +164,31 @@ main .banner-container .banner-info .banner-info a {
   margin-right: 10px;
 }
 
+main .container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 20px;
+}
+main .container-galeria .galeria-img {
+  text-align: center;
+  max-width: 90%;
+  height: auto;
+  padding: 0.5rem;
+  animation: fade 0.7s;
+}
+main .container-galeria .galeria-img galeria-img:hover .card-front {
+  display: none;
+}
+main .container-galeria .galeria-img .card-back {
+  display: none;
+}
+main .container-galeria .galeria-img:hover {
+  display: block;
+}
+main .container-galeria .galeria-img p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=main.css.map */
