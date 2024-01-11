@@ -25,16 +25,16 @@ main {
         animation: fade 0.7s;
       }
     }
-    .card-front {
-      &:hover {
-        display: none;
-      }
-    }
+
     .card-back {
       display: none;
-      &:hover {
+      .galeria-img:hover .card-back {
         display: block;
       }
+    }
+
+    .galeria-img :hover .card-front {
+      display: none;
     }
   }
 }

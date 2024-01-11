@@ -67,7 +67,7 @@ main .banner-container::before {
 }
 main .banner-container .banner-info {
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -273,14 +273,14 @@ main .container-galeria .galeria-img .galeria-img img {
 main .container-galeria .galeria-img .galeria-img img {
   animation: fade 0.7s;
 }
-main .container-galeria .card-front:hover {
-  display: none;
-}
 main .container-galeria .card-back {
   display: none;
 }
-main .container-galeria .card-back:hover {
+main .container-galeria .card-back .galeria-img:hover .card-back {
   display: block;
+}
+main .container-galeria .galeria-img :hover .card-front {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
