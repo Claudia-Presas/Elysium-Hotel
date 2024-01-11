@@ -11,6 +11,14 @@
       name="description"
       content=" Nuestro equipo está comprometido a brindarte una experiencia de viaje incomparable."
     />
+
+    <!-- LINK FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="../multimedia/img/logo-elysium.jpeg"
+      type="image/x-icon"
+    />
+
     <!-- LINK BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -18,22 +26,28 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <!-- LINK CSS -->
-    <link rel="stylesheet" href="../scss/main.scss" />
-    <title>Joaquina Beach-RESERVAS</title>
+
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>ELYSIUM</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar">
+      <nav class="navbar navbar-expand-lg barra">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../">
+          <a class="navbar-brand" href="#">
             <img
-              src="../multimedia/img/logo-joaquina.png"
-              alt="logo-la-joaquina"
+              class="navb-img"
+              src="../multimedia/img/logo-elysium.jpeg"
+              alt="logo-elysium"
             />
           </a>
+
           <button
-            class="navbar-toggler"
+            class="navbar-toggler toggler-color"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -74,26 +88,57 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <div>
-          <h1>Quienes somos</h1>
-          <h3>Nuestra historia</h3>
-          <img src="../multimedia/carrusel/slaider-2.jpg" alt="" />
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-            laborum repudiandae? Id ullam quisquam eaque quae? Quod voluptas
-            eveniet exercitationem porro
-          </p>
+    <main class="main-nosotros">
+      <section class="nosotros-container">
+        <h1 class="titulo-nosotros">Quienes somos</h1>
+
+        <div class="comienzos">
+          <img
+            class="img-antes"
+            src="../multimedia/carrusel/nosotros-antes.jpg"
+            alt="imagen-de-los-comienzos-del-hotel"
+          />
+
+          <div class="antes">
+            <h3 class="titulo-nosotros">Nuestros inicios</h3>
+            <p>
+              Hace unos años, un sueño tomó forma a pocos pasos de la playa.
+              Celebramos nuestra inauguración con alegría y la promesa de
+              ofrecer
+              <span class="resaltado"> experiencias inolvidables.</span> Desde
+              entonces, hemos tejido una rica narrativa de
+              <span class="resaltado"> momentos compartidos</span> y recuerdos
+              eternos. Cada huésped que cruza nuestras puertas se convierte en
+              parte de esta historia, y es nuestro honor seguir creciendo
+              juntos.
+            </p>
+          </div>
         </div>
-        <h3>Nuestra historia</h3>
-        <img src="../multimedia/fotos/reposera-1.jpg" alt="" />
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ea
-          mollitia error enim blanditiis provident. Quasi quia laboriosam
-          provident. Sunt suscipit
-        </p>
-        <div></div>
+        <div class="actualidad">
+          <img
+            class="img-actualidad"
+            src="../multimedia/carrusel/slaider-1.jpg"
+            alt="imagen-de-como-se-ve-en-la-actualidad-el-hotel"
+          />
+
+          <div class="ahora">
+            <h3 class="titulo-nosotros">Hospitalidad que Perdura</h3>
+            <p>
+              En la actualidad, nuestra esencia sigue siendo la misma:
+              hospitalidad cálida y una
+              <span class="resaltado">
+                ubicación junto al mar incomparable.</span
+              >
+              Mantenemos viva la llama que encendimos en nuestros primeros días,
+              ofreciendo no solo un refugio frente al océano, sino también un
+              lugar donde la historia se encuentra con la
+              <span class="resaltado"> modernidad.</span> Cada visita sigue
+              siendo un <span class="resaltado">capítulo adicional</span> en
+              nuestro cuento compartido
+            </p>
+          </div>
+        </div>
+        <h3 class="pie-nosotros">No dejes de conocernos</h3>
       </section>
     </main>
     <footer>

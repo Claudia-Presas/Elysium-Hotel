@@ -1,16 +1,8 @@
-@import "./utilities/reset";
-@import "./utilities/globals";
-@import "./utilities/variables";
-@import "./utilities/lists";
-@import "./utilities/maps";
-@import "./utilities/loops";
-@import "./utilities/mixin";
-@import "./utilities/extends";
+@import "utilitis/reset";
+@import "utilitis/globals";
 
-@import "./components/header";
+@import "components/header";
 
-// @import "./pages/index";
-@import "./pages/main-index";
-@import "./pages/servicios";
-@import "./pages/galeria";
-// @import "./utilities/media-queries";
+@import "pages/home";
+@import "pages/servicios";
+@import "pages/nosotros";

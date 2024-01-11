@@ -11,11 +11,14 @@
       name="description"
       content="Descubre nuestros servicios excepcionales: hotel de lujo, gastronomía gourmet, habitaciones elegantes con vistas al mar. Tu experiencia será inolvidable."
     />
+
+    <!-- LINK FAVICON -->
     <link
       rel="shortcut icon"
-      href="../multimedia/img/logo-joaquina.png"
+      href="./multimedia/img/logo-elysium.jpeg"
       type="image/x-icon"
     />
+
     <!-- LINK BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -23,22 +26,27 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <!-- LINK CSS -->
     <link rel="stylesheet" href="../styles/index.css" />
-    <title>Joaquina-Beach</title>
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>ELYSIUM</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar">
+      <nav class="navbar navbar-expand-lg barra">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../">
+          <a class="navbar-brand" href="#">
             <img
-              src="../multimedia/img/logo-joaquina.png"
-              alt="logo-la-joaquina"
+              class="navb-img"
+              src="../multimedia/img/logo-elysium.jpeg"
+              alt="logo-elysium"
             />
           </a>
+
           <button
-            class="navbar-toggler"
+            class="navbar-toggler toggler-color"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -63,7 +71,7 @@
                 <a class="nav-link" href="../pages/servicios.html">SERVICIOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/tarifas.html">TARIFAS</a>
+                <a class="nav-link" href="../pages/nosotros.html">NOSOTROS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/galeria.html">GALERIA</a>
@@ -80,69 +88,105 @@
       </nav>
     </header>
     <main class="main-servicios">
-      <img src="../multimedia/fotos/hotel-1.jpg" alt="" />
+      <h1>SERVICIOS</h1>
 
-      <div class="button-servicios">
-        <h2>LOS RECUERDOS DURARÁN PARA SIEMPRE</h2>
-        <span>Entrada</span>
-        <input type="date" name="entrada" id="entrada" />
-        <span>Salida</span>
-        <input type="date" name="salida" id="salida" />
-      </div>
+      <img
+        src="../multimedia/fotos/hotel-1.jpg"
+        alt="foto-con-vista-hacia-el-oceano"
+      />
+      <div class="border"></div>
+
       <section class="servicios">
-        <h1>SERVICIOS</h1>
-
         <div class="servicios-1">
           <ul>
             <li>
-              <iconify-icon icon="pepicons-print:wifi"></iconify-icon>wi-fi
+              <iconify-icon
+                class="icon"
+                icon="material-symbols-light:pool-sharp"
+              ></iconify-icon
+              >Pileta climatizada.
             </li>
             <li>
               <iconify-icon
+                class="icon"
                 icon="material-symbols-light:pool-sharp"
               ></iconify-icon
-              >Pileta climatizada y al aire libre
+              >Pileta al aire libre.
             </li>
             <li>
-              <iconify-icon icon="mdi:guest-room-outline"></iconify-icon
-              >Habitaciones simples y dobles
+              <iconify-icon
+                class="icon"
+                icon="mdi:guest-room-outline"
+              ></iconify-icon
+              >Habitaciones dobles.
             </li>
             <li>
-              <iconify-icon icon="icons8:dining-room"></iconify-icon>Restaurant
+              <iconify-icon
+                class="icon"
+                icon="mdi:guest-room-outline"
+              ></iconify-icon
+              >Habitaciones simples.
             </li>
           </ul>
+          <a class="button-servicios" href="../pages/galeria.html">+info</a>
         </div>
 
         <div class="servicios-2">
           <ul>
-            <li><iconify-icon icon="map:spa"></iconify-icon>Spa</li>
             <li>
-              <iconify-icon icon="guidance:play-room"></iconify-icon>Sector de
-              juegos
+              <iconify-icon
+                class="icon"
+                icon="icons8:dining-room"
+              ></iconify-icon
+              >Restaurant.
+            </li>
+            <li>
+              <iconify-icon class="icon" icon="map:spa"></iconify-icon>Spa.
             </li>
             <li>
               <iconify-icon
+                class="icon"
+                icon="guidance:play-room"
+              ></iconify-icon
+              >Sector de juegos.
+            </li>
+            <li>
+              <iconify-icon
+                class="icon"
                 icon="material-symbols-light:fitness-center-rounded"
               ></iconify-icon
               >Gimnasio
             </li>
           </ul>
+          <a class="button-servicios" href="../pages/galeria.html">+info</a>
         </div>
+
         <div class="servicios-3">
           <ul>
             <li>
-              <iconify-icon icon="clarity:car-line"></iconify-icon
+              <iconify-icon class="icon" icon="clarity:car-line"></iconify-icon
               >Estacionamiento
             </li>
             <li>
-              <iconify-icon icon="game-icons:swimfins"></iconify-icon
+              <iconify-icon
+                class="icon"
+                icon="game-icons:swimfins"
+              ></iconify-icon
               >Actividades acuáticas
             </li>
             <li>
-              <iconify-icon icon="carbon:help-desk"></iconify-icon>Recpción las
-              24hs
+              <iconify-icon class="icon" icon="carbon:help-desk"></iconify-icon
+              >Recpción las 24hs
+            </li>
+            <li>
+              <iconify-icon
+                class="icon"
+                icon="pepicons-print:wifi"
+              ></iconify-icon
+              >wi-fi
             </li>
           </ul>
+          <a class="button-servicios" href="../pages/galeria.html">+info</a>
         </div>
       </section>
     </main>
