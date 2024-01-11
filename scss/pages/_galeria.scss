@@ -1,0 +1,40 @@
+main {
+  .titulo-galeria {
+    color: #0e185f;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #0e185f;
+    margin-top: 1rem;
+  }
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 20px;
+
+    .galeria-img {
+      text-align: center;
+
+      .galeria-img img {
+        max-width: 90%;
+        height: auto;
+        padding: 0.5rem;
+      }
+      .galeria-img img {
+        animation: fade 0.7s;
+      }
+    }
+    .card-front {
+      &:hover {
+        display: none;
+      }
+    }
+    .card-back {
+      display: none;
+      &:hover {
+        display: block;
+      }
+    }
+  }
+}

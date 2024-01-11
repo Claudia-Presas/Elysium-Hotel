@@ -32,9 +32,10 @@ main {
         margin: 0 auto;
       }
 
-      .comienzos img,
-      .actualidad img {
+      .img-antes,
+      .img-actualidad {
         width: 50%;
+        height: auto;
         object-fit: cover;
         box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
       }
@@ -59,6 +60,12 @@ main {
 
   .actualidad {
     flex-direction: row-reverse;
+  }
+  .pie-nosotros {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    color: #0e185f;
   }
 }
 

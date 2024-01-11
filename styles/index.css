@@ -229,27 +229,27 @@
   gap: 1rem;
 } */
 
-.img-container {
+/* .img-container {
   max-width: 50%;
   margin: 0 auto;
-}
+} */
 
-.comienzos img,
+/* .comienzos img,
 .actualidad img {
   width: 50%;
   object-fit: cover;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
-}
+} */
 
-.titulo-nosotros {
+/* .titulo-nosotros {
   margin-bottom: 2rem;
-}
+} */
 
-.actualidad {
+/* .actualidad {
   flex-direction: row-reverse;
-}
+} */
 
-.antes,
+/* .antes,
 .ahora {
   display: flex;
   flex-direction: column;
@@ -258,62 +258,62 @@
   text-align: center;
   margin: 1rem;
   width: 50%;
-}
+} */
 
-.resaltado {
+/* .resaltado {
   font-weight: bold;
   color: black;
-}
+} */
 
-.pie-nosotros {
+/* .pie-nosotros {
   text-align: center;
   padding-top: 1rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* GALERIA */
 
-.main-galeria h1 {
+/* .titulo-galeria  {
   color: #0e185f;
   padding-bottom: 0.5rem;
   text-align: center;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #0e185f;
   margin-top: 1rem;
-}
+} */
 
-.container-galeria {
+/* .container-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 20px;
-}
+} */
 
-.galeria-img {
+/* .galeria-img {
   text-align: center;
-}
+} */
 
-.galeria-img img {
+/* .galeria-img img {
   max-width: 90%;
   height: auto;
   padding: 0.5rem;
-}
+} */
 
-.galeria-img img {
+/* .galeria-img img {
   animation: fade 0.7s;
-}
+} */
 
-.card-back {
+/* .card-back {
   display: none;
-}
+} */
 
-.galeria-img:hover .card-back {
+/* .galeria-img:hover .card-back {
   display: block;
-}
+} */
 
-.galeria-img:hover .card-front {
+/* .galeria-img:hover .card-front {
   display: none;
-}
+} */
 
 /* RESERVAS */
 
