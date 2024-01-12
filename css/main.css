@@ -44,6 +44,47 @@ header .barra .container-fluid .nav-link .active {
   color: #afd3e2;
 }
 
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.3rem;
+  background-color: #0e185f;
+  color: #afd3e2;
+  height: 9rem;
+}
+footer .footer-subtitulo {
+  font-size: 13px;
+  padding: 0.7rem;
+  padding-top: 2rem;
+}
+footer .footer-redes {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 7px;
+}
+footer .footer-redes .redes {
+  display: inline-block;
+}
+footer .footer-redes .redes .enlace-redes {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  transition: font-size 0.3s ease;
+}
+footer .footer-redes .redes .enlace-redes:hover {
+  font-size: 40px;
+}
+footer .footer-derechos {
+  font-size: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
 /* BANNER*/
 main .banner-container {
   position: relative;
@@ -67,7 +108,7 @@ main .banner-container::before {
 }
 main .banner-container .banner-info {
   position: absolute;
-  top: 65%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -265,22 +306,188 @@ main .container-galeria {
 main .container-galeria .galeria-img {
   text-align: center;
 }
-main .container-galeria .galeria-img .galeria-img img {
+main .container-galeria .galeria-img img {
   max-width: 90%;
   height: auto;
   padding: 0.5rem;
-}
-main .container-galeria .galeria-img .galeria-img img {
   animation: fade 0.7s;
 }
-main .container-galeria .card-back {
+main .container-galeria .galeria-img .card-back {
   display: none;
 }
-main .container-galeria .card-back .galeria-img:hover .card-back {
+main .container-galeria .galeria-img:hover .card-back {
   display: block;
 }
-main .container-galeria .galeria-img :hover .card-front {
+main .container-galeria .galeria-img:hover .card-front {
   display: none;
+}
+
+.main-reservas .form-container {
+  align-items: center;
+  padding: 0 3rem;
+  width: 100%;
+  margin: 0 auto;
+  gap: 0.7rem;
+}
+.main-reservas .form-container .titulo-reservas {
+  color: #0e185f;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #0e185f;
+  margin-top: 1rem;
+}
+.main-reservas .form-container .form-datos {
+  display: flex;
+  margin: 2rem 0;
+}
+.main-reservas .form-container .form-datos .formulario {
+  background-color: #0e185f;
+  box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
+  width: 70%;
+  padding: 2rem;
+  align-items: center;
+  justify-items: center;
+  gap: 0.7rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "titulo titulo" "desde hasta" "menores adultos" "nombre apellido" "tel email" "textarea textarea" "submit submit";
+}
+.main-reservas .form-container .form-datos .formulario .form-reserva {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  margin: 10px;
+}
+.main-reservas .form-container .form-datos .formulario .nombre .form-reserva,
+.main-reservas .form-container .form-datos .formulario .apellido .form-reserva,
+.main-reservas .form-container .form-datos .formulario .tel .form-reserva,
+.main-reservas .form-container .form-datos .formulario .email .form-reserva {
+  text-align: left;
+}
+.main-reservas .form-container .form-datos .formulario .desde input[type=date]::-webkit-calendar-picker-indicator,
+.main-reservas .form-container .form-datos .formulario .hasta input[type=date]::-webkit-calendar-picker-indicator {
+  color: white;
+}
+.main-reservas .form-container .form-datos .formulario .desde input,
+.main-reservas .form-container .form-datos .formulario .hasta input,
+.main-reservas .form-container .form-datos .formulario .menores input,
+.main-reservas .form-container .form-datos .formulario .adultos input {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 9rem;
+  height: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  padding: 1rem;
+  color: white;
+  background-color: transparent;
+}
+.main-reservas .form-container .form-datos .formulario .desde input:hover,
+.main-reservas .form-container .form-datos .formulario .hasta input:hover,
+.main-reservas .form-container .form-datos .formulario .menores input:hover,
+.main-reservas .form-container .form-datos .formulario .adultos input:hover {
+  color: #0e185f;
+  background-color: #00ffdd;
+}
+.main-reservas .form-container .form-datos .formulario .menores input,
+.main-reservas .form-container .form-datos .formulario .adultos input {
+  padding-left: 5px;
+  width: 6rem;
+  height: 2rem;
+}
+.main-reservas .form-container .form-datos .formulario .nombre input,
+.main-reservas .form-container .form-datos .formulario .apellido input,
+.main-reservas .form-container .form-datos .formulario .tel input,
+.main-reservas .form-container .form-datos .formulario .email input {
+  border-style: none;
+  border-bottom: 1px solid white;
+  width: 13rem;
+  height: 2rem;
+  font-size: 13px;
+  text-align: left;
+  padding-left: 0.7rem;
+  background-color: transparent;
+}
+.main-reservas .form-container .form-datos .formulario .nombre input:hover,
+.main-reservas .form-container .form-datos .formulario .apellido input:hover,
+.main-reservas .form-container .form-datos .formulario .tel input:hover,
+.main-reservas .form-container .form-datos .formulario .email input:hover {
+  color: #0e185f;
+  background-color: #00ffdd;
+}
+.main-reservas .form-container .form-datos .formulario .form-10 {
+  grid-column: 1/3;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 90%;
+  padding: 1rem;
+  margin-top: 0.7rem;
+}
+.main-reservas .form-container .form-datos .formulario .form-10 textarea {
+  width: 100%;
+  border-style: none;
+  background-color: transparent;
+  color: white;
+}
+.main-reservas .form-container .form-datos .formulario .form-11 {
+  grid-column: 1/3;
+  width: 90%;
+}
+.main-reservas .form-container .form-datos .formulario .form-11 .submit {
+  width: 100%;
+  border-style: none;
+  background-color: #00ffdd;
+  color: #0e185f;
+}
+.main-reservas .form-container .form-datos .formulario .submit {
+  color: #0e185f;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.main-reservas .form-container .form-datos .formulario .submit:hover {
+  background-color: white;
+  color: #0e185f;
+}
+.main-reservas .form-container .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 1rem 0 5rem;
+}
+.main-reservas .form-container .informacion ul {
+  list-style: none;
+  padding: 1rem 0 0.5rem 0;
+}
+.main-reservas .form-container .informacion ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.main-reservas .form-container .informacion ul li iconify-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #0e185f;
+}
+.main-reservas .form-container .ubicacion h3 {
+  margin-left: 1rem;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #0e185f;
+}
+.main-reservas .form-container .ubicacion .maps {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 0px 20px 0px rgb(175, 175, 180);
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

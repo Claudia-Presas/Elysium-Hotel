@@ -317,30 +317,30 @@
 
 /* RESERVAS */
 
-.form-container {
+/* .form-container {
   align-items: center;
   padding: 0 3rem;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   gap: 0.7rem;
-}
+} */
 
-.form-container h1 {
+/* .form-container .titulo-reservas {
   color: #0e185f;
   padding-bottom: 0.5rem;
   text-align: center;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #0e185f;
   margin-top: 1rem;
-}
+} */
 
-.form-datos {
+/* .form-datos {
   display: flex;
   margin: 2rem 0;
-}
+} */
 
-.formulario {
+/* .formulario {
   background-color: #0e185f;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
   width: 70%;
@@ -359,70 +359,70 @@
     "tel email"
     "textarea textarea"
     "submit submit";
-}
+} */
 
-.desde {
+/* .desde {
   grid-column: 1/2;
-}
+} */
 
-.hasta {
+/* .hasta {
   grid-column: 2/3;
-}
+} */
 
-.menores {
+/* .menores {
   grid-column: 1/2;
-}
+} */
 
-.adultos {
+/* .adultos {
   grid-column: 2/3;
-}
+} */
 
-.nombre {
+/* .nombre {
   grid-column: 1/2;
-}
+} */
 
-.apellido {
+/* .apellido {
   grid-column: 2/3;
-}
+} */
 
-.tel {
+/* .tel {
   grid-column: 1/2;
-}
+} */
 
-.email {
+/* .email {
   grid-column: 2/3;
-}
+} */
 
-.form-10 {
+/* .form-10 {
   grid-column: 1/3;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   width: 90%;
   padding: 1rem;
   margin-top: 0.7rem;
-}
+} */
 
-.form-11 {
+/* .form-11 {
   grid-column: 1/3;
   width: 90%;
-}
+} */
 
-.formulario p {
+/* .formulario p {
   font-size: 15px;
   text-align: center;
   font-weight: bold;
   color: white;
   margin: 10px;
-}
+} */
 
-.nombre p,
+/* .nombre p,
 .apellido p,
 .tel p,
 .email p {
   text-align: left;
-}
+} */
 
-.desde input,
+/* .desde input,
 .hasta input,
 .menores input,
 .adultos input {
@@ -436,24 +436,24 @@
   padding: 1rem;
   color: white;
   background-color: transparent;
-}
+} */
 
-.desde input:hover,
+/* .desde input:hover,
 .hasta input:hover,
 .menores input:hover,
 .adultos input:hover {
   color: #0e185f;
   background-color: #00ffdd;
-}
+} */
 
-.menores input,
+/* .menores input,
 .adultos input {
   padding-left: 5px;
   width: 6rem;
   height: 2rem;
-}
+} */
 
-.nombre input,
+/* .nombre input,
 .apellido input,
 .tel input,
 .email input {
@@ -464,79 +464,79 @@
   text-align: left;
   padding-left: 0.7rem;
   background-color: transparent;
-}
+} */
 
-.nombre input:hover,
+/* .nombre input:hover,
 .apellido input:hover,
 .tel input:hover,
 .email input:hover {
   color: #0e185f;
   background-color: #00ffdd;
-}
+} */
 
-.form-10 textarea,
+/* .form-10 textarea,
 .submit {
   width: 100%;
   border-style: none;
   background-color: transparent;
   color: white;
-}
+} */
 
-.submit {
+/* .submit {
   background-color: white;
   color: #0e185f;
   height: 2.5rem;
   font-size: 1.3rem;
   font-weight: bold;
-}
+} */
 
-.submit:hover {
+/* .submit:hover {
   background-color: #00ffdd;
   color: black;
-}
+} */
 
-.informacion {
+/* .informacion {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 3rem 1rem 0 2rem;
-}
+} */
 
-.informacion ul {
+/* .informacion ul {
   list-style: none;
   padding: 1rem 0 0.5rem 0;
-}
+} */
 
-.informacion li {
+/* .informacion li {
   display: flex;
   align-items: center;
   font-size: 1rem;
   margin-bottom: 10px;
-}
+} */
 
-.informacion iconify-icon {
+/* .informacion iconify-icon {
   margin-right: 10px;
   font-size: 1.5rem;
   color: #0e185f;
-}
+} */
 
-.ubicacion h3 {
+/* .ubicacion h3 {
   margin-left: 1rem;
   text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
   color: #0e185f;
-}
+} */
 
-.maps {
+/* .maps {
   width: 100%;
   height: auto;
   box-shadow: 0px 0px 20px 0px rgb(175, 175, 180);
 
   margin-bottom: 2rem;
   margin-top: 1rem;
-}
+} */
 
 /* FOOTER */
 footer {

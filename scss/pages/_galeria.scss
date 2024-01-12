@@ -7,6 +7,7 @@ main {
     border-bottom: 2px solid #0e185f;
     margin-top: 1rem;
   }
+
   .container-galeria {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -16,25 +17,24 @@ main {
     .galeria-img {
       text-align: center;
 
-      .galeria-img img {
+      img {
         max-width: 90%;
         height: auto;
         padding: 0.5rem;
-      }
-      .galeria-img img {
         animation: fade 0.7s;
       }
-    }
 
-    .card-back {
-      display: none;
-      .galeria-img:hover .card-back {
+      .card-back {
+        display: none;
+      }
+
+      &:hover .card-back {
         display: block;
       }
-    }
 
-    .galeria-img :hover .card-front {
-      display: none;
+      &:hover .card-front {
+        display: none;
+      }
     }
   }
 }
