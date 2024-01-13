@@ -1,12 +1,13 @@
 header {
-  background-color: white;
+  background-color: nth($list: $colores, $n: 3);
   .barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, space-between, center);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     width: 100%;
     padding: 0;
-    background-color: #0e185f;
+    background-color: nth($list: $colores, $n: 1);
 
     .container-fluid {
       .navbar-brand {
@@ -18,21 +19,21 @@ header {
         border: none;
       }
       .toggler-color {
-        background-color: #afd3e2;
+        background-color: nth($list: $colores, $n: 5);
       }
 
       .navbar-nav .nav-item .nav-link.active {
-        color: #afd3e2;
+        color: nth($list: $colores, $n: 3);
       }
       .nav-link {
         font-weight: bold;
-        color: #afd3e2;
+        color: nth($list: $colores, $n: 3);
       }
       &:hover {
-        color: aqua;
+        color: nth($list: $colores, $n: 2);
       }
       .nav-link .active {
-        color: #afd3e2;
+        color: nth($list: $colores, $n: 5);
       }
     }
   }

@@ -1,5 +1,8 @@
 @import "utilitis/reset";
+// @import "utilitis/variables"
 @import "utilitis/globals";
+@import "utilitis/lists";
+@import "utilitis/mixin";
 
 @import "components/header";
 @import "components/footer";
@@ -9,3 +12,5 @@
 @import "pages/nosotros";
 @import "pages/galeria";
 @import "pages/reservas";
+
+@import "utilitis/media-queries";

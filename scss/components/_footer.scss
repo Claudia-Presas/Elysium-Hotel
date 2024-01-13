@@ -1,11 +1,12 @@
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex(column, center, center);
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   padding: 0.3rem;
-  background-color: #0e185f;
-  color: #afd3e2;
+  background-color: nth($list: $colores, $n: 1);
+  color: nth($list: $colores, $n: 3);
   height: 9rem;
 
   .footer-subtitulo {
@@ -15,9 +16,9 @@ footer {
   }
 
   .footer-redes {
+    display: flex;
     list-style: none;
     padding: 0;
-    display: flex;
     gap: 7px;
 
     .redes {
@@ -25,9 +26,9 @@ footer {
 
       .enlace-redes {
         display: block;
+        text-align: center;
         width: 40px;
         height: 40px;
-        text-align: center;
         line-height: 40px;
         font-size: 30px;
         transition: font-size 0.3s ease;
