@@ -1,0 +1,206 @@
+@media (max-width: 1024px) {
+  //SERVICIOS
+  .main-servicios {
+    .servicios {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .servicios-1,
+  .servicios-2,
+  .servicios-3 {
+    margin-bottom: 1rem;
+  }
+
+  //NOSOTROS
+  .main-nosotros {
+    .nosotros-container {
+      .comienzos,
+      .actualidad {
+        flex-direction: column;
+        gap: 0;
+
+        .img-antes,
+        .img-actualidad {
+          width: 90%;
+        }
+
+        .antes,
+        .ahora {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // GALERIA
+  .main-galeria {
+    .container-galeria {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  //RESERVAS
+  .main-reservas {
+    .form-container {
+      .form-datos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .formulario {
+        margin-bottom: 1rem;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "titulo"
+          "desde"
+          "hasta"
+          "menores"
+          "adultos"
+          "nombre"
+          "apellido"
+          "tel"
+          "email"
+          "textarea"
+          "submit";
+      }
+    }
+  }
+
+  .informacion {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  //barra navegación
+  .container-fluid {
+    .navbar-toggler {
+      border: none;
+    }
+  }
+
+  // HOME
+  .banner-container {
+    .banner-info {
+      top: 40%;
+
+      .titulo-banner {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  //SERVICIOS
+  .main-servicios {
+    .servicios {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  //NOSOTROS
+  .main-nosotros {
+    .nosotros-container {
+      .comienzos,
+      .actualidad {
+        .img-antes,
+        .img-actualidad {
+          width: 90%;
+        }
+      }
+    }
+  }
+  // GALERIA
+  .main-galeria {
+    .container-galeria {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  //RESERVAS
+  .main-reservas {
+    margin: 2rem;
+    .form-container {
+      .titulo-reservas {
+      }
+
+      .form-datos {
+        .formulario {
+          .form-reserva {
+          }
+
+          .nombre,
+          .apellido,
+          .tel,
+          .email {
+            .form-reserva {
+            }
+          }
+
+          .desde,
+          .hasta {
+            input[type="date"] {
+            }
+          }
+        }
+
+        .desde,
+        .hasta,
+        .menores,
+        .adultos {
+          input {
+            &:hover {
+            }
+          }
+        }
+
+        .menores,
+        .adultos {
+          input {
+          }
+        }
+
+        .nombre,
+        .apellido,
+        .tel,
+        .email {
+          input {
+            &:hover {
+            }
+          }
+        }
+
+        .form-10 {
+          textarea {
+          }
+        }
+
+        .form-11 {
+          .submit {
+          }
+        }
+      }
+    }
+  }
+
+  .informacion {
+    ul {
+      li {
+      }
+
+      iconify-icon {
+      }
+    }
+  }
+
+  .ubicacion {
+    h3 {
+    }
+
+    .maps {
+    }
+  }
+}

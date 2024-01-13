@@ -2,9 +2,6 @@ header {
   background-color: nth($list: $colores, $n: 3);
   .barra {
     @include flex(row, space-between, center);
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     width: 100%;
     padding: 0;
     background-color: nth($list: $colores, $n: 1);
@@ -12,29 +9,82 @@ header {
     .container-fluid {
       .navbar-brand {
         .navb-img {
-          width: 6rem;
+          width: 5rem;
+          border-radius: 70px;
+          margin: 0.5rem;
+          height: 5rem;
         }
       }
+
       .navbar-toggler {
         border: none;
       }
+
       .toggler-color {
-        background-color: nth($list: $colores, $n: 5);
+        background-color: nth($list: $colores, $n: 3);
       }
 
-      .navbar-nav .nav-item .nav-link.active {
-        color: nth($list: $colores, $n: 3);
-      }
-      .nav-link {
+      .navbar-nav .nav-item .nav-link {
         font-weight: bold;
         color: nth($list: $colores, $n: 3);
-      }
-      &:hover {
-        color: nth($list: $colores, $n: 2);
-      }
-      .nav-link .active {
-        color: nth($list: $colores, $n: 5);
+
+        &:hover {
+          color: nth($list: $colores, $n: 2);
+        }
+
+        .active {
+          color: nth($list: $colores, $n: 3);
+
+          &.active {
+            color: nth($list: $colores, $n: 2);
+          }
+        }
       }
     }
   }
 }
+
+// header {
+//   background-color: nth($list: $colores, $n: 3);
+//   .barra {
+//     @include flex(row, space-between, center);
+//     // display: flex;
+//     // justify-content: space-between;
+//     // align-items: center;
+//     width: 100%;
+//     padding: 0;
+//     background-color: nth($list: $colores, $n: 1);
+
+//     .container-fluid {
+//       .navbar-brand {
+//         .navb-img {
+//           width: 5rem;
+//           border-radius: 70px;
+//           margin: 0.5rem 2rem;
+//           height: 5rem;
+//         }
+//       }
+//       .navbar-toggler {
+//         border: none;
+//       }
+//       .toggler-color {
+//         background-color: nth($list: $colores, $n: 3);
+//       }
+
+//       .navbar-nav .nav-item .nav-link.active {
+//         color: nth($list: $colores, $n: 3);
+//       }
+//       .nav-link {
+//         font-weight: bold;
+//         color: nth($list: $colores, $n: 3);
+
+//         &:hover {
+//           color: nth($list: $colores, $n: 2);
+//         }
+//       }
+//       .nav-link .active {
+//         color: nth($list: $colores, $n: 5);
+//       }
+//     }
+//   }
+// }

@@ -22,26 +22,29 @@ header .barra {
   background-color: #0e185f;
 }
 header .barra .container-fluid .navbar-brand .navb-img {
-  width: 6rem;
+  width: 5rem;
+  border-radius: 70px;
+  margin: 0.5rem;
+  height: 5rem;
 }
 header .barra .container-fluid .navbar-toggler {
   border: none;
 }
 header .barra .container-fluid .toggler-color {
-  background-color: #afd3e2;
+  background-color: white;
 }
-header .barra .container-fluid .navbar-nav .nav-item .nav-link.active {
-  color: white;
-}
-header .barra .container-fluid .nav-link {
+header .barra .container-fluid .navbar-nav .nav-item .nav-link {
   font-weight: bold;
   color: white;
 }
-header .barra .container-fluid:hover {
+header .barra .container-fluid .navbar-nav .nav-item .nav-link:hover {
   color: #00ffdd;
 }
-header .barra .container-fluid .nav-link .active {
-  color: #afd3e2;
+header .barra .container-fluid .navbar-nav .nav-item .nav-link .active {
+  color: white;
+}
+header .barra .container-fluid .navbar-nav .nav-item .nav-link .active.active {
+  color: #00ffdd;
 }
 
 footer {
@@ -139,11 +142,11 @@ main .banner-container .banner-info .button-home:hover {
 }
 
 /* SERVICIOS*/
-main {
+.main-servicios {
   position: relative;
   width: 100%;
 }
-main h1 {
+.main-servicios h1 {
   color: #0e185f;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
@@ -151,7 +154,7 @@ main h1 {
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #0e185f;
 }
-main img {
+.main-servicios img {
   width: 100%;
   max-height: 40vh;
   margin: 0 auto;
@@ -160,67 +163,69 @@ main img {
   display: block;
   border-bottom: 2px solid #0e185f;
 }
-main .servicios {
+.main-servicios .servicios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  align-items: center;
   gap: 0.5rem;
   padding: 2rem;
 }
-main .servicios .servicios-1,
-main .servicios .servicios-2,
-main .servicios .servicios-3 {
+.main-servicios .servicios .servicios-1,
+.main-servicios .servicios .servicios-2,
+.main-servicios .servicios .servicios-3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   height: auto;
   padding: 1rem;
   max-width: 20rem;
   border-radius: 15px;
   box-shadow: 0px 0px 20px 0px rgb(248, 103, 221);
+  width: 100%;
 }
-main .servicios .servicios-1 ul,
-main .servicios .servicios-2 ul,
-main .servicios .servicios-3 ul {
+.main-servicios .servicios .servicios-1 ul,
+.main-servicios .servicios .servicios-2 ul,
+.main-servicios .servicios .servicios-3 ul {
   list-style: none;
   padding: 1rem 0 0.5rem 0;
 }
-main .servicios .servicios-1 ul li,
-main .servicios .servicios-2 ul li,
-main .servicios .servicios-3 ul li {
+.main-servicios .servicios .servicios-1 ul li,
+.main-servicios .servicios .servicios-2 ul li,
+.main-servicios .servicios .servicios-3 ul li {
   display: flex;
   align-items: center;
   font-size: 1rem;
   margin-bottom: 10px;
 }
-main .servicios .servicios-1 ul li .icon,
-main .servicios .servicios-2 ul li .icon,
-main .servicios .servicios-3 ul li .icon {
+.main-servicios .servicios .servicios-1 ul li .icon,
+.main-servicios .servicios .servicios-2 ul li .icon,
+.main-servicios .servicios .servicios-3 ul li .icon {
   margin-right: 10px;
   font-size: 1.5rem;
   color: #0e185f;
 }
-main .servicios .servicios-1 .button-servicios,
-main .servicios .servicios-2 .button-servicios,
-main .servicios .servicios-3 .button-servicios {
+.main-servicios .servicios .servicios-1 .button-servicios,
+.main-servicios .servicios .servicios-2 .button-servicios,
+.main-servicios .servicios .servicios-3 .button-servicios {
   background-color: #0e185f;
-  color: #afd3e2;
+  color: white;
   width: 6rem;
   height: 2rem;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
 }
-main .servicios .servicios-1 .button-servicios:hover,
-main .servicios .servicios-2 .button-servicios:hover,
-main .servicios .servicios-3 .button-servicios:hover {
+.main-servicios .servicios .servicios-1 .button-servicios:hover,
+.main-servicios .servicios .servicios-2 .button-servicios:hover,
+.main-servicios .servicios .servicios-3 .button-servicios:hover {
   background-color: #00ffdd;
   color: #0e185f;
   transition: 0.7s;
 }
 
-main .nosotros-container {
+.main-nosotros .nosotros-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,10 +233,10 @@ main .nosotros-container {
   background-color: white;
   width: 100%;
   gap: 1rem;
-  padding: 0 3rem;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
-main .nosotros-container .titulo-nosotros {
+.main-nosotros .nosotros-container .titulo-nosotros {
   text-align: center;
   color: #0e185f;
   padding-bottom: 0.5rem;
@@ -239,32 +244,32 @@ main .nosotros-container .titulo-nosotros {
   border-bottom: 2px solid #0e185f;
   margin-bottom: 0.5rem;
 }
-main .nosotros-container .comienzos,
-main .nosotros-container .actualidad {
+.main-nosotros .nosotros-container .comienzos,
+.main-nosotros .nosotros-container .actualidad {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   gap: 2rem;
 }
-main .nosotros-container .comienzos .img-container,
-main .nosotros-container .actualidad .img-container {
+.main-nosotros .nosotros-container .comienzos .img-container,
+.main-nosotros .nosotros-container .actualidad .img-container {
   max-width: 50%;
   margin: 0 auto;
 }
-main .nosotros-container .comienzos .img-antes,
-main .nosotros-container .comienzos .img-actualidad,
-main .nosotros-container .actualidad .img-antes,
-main .nosotros-container .actualidad .img-actualidad {
+.main-nosotros .nosotros-container .comienzos .img-antes,
+.main-nosotros .nosotros-container .comienzos .img-actualidad,
+.main-nosotros .nosotros-container .actualidad .img-antes,
+.main-nosotros .nosotros-container .actualidad .img-actualidad {
   width: 60%;
   height: auto;
   object-fit: cover;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
 }
-main .nosotros-container .comienzos .antes,
-main .nosotros-container .comienzos .ahora,
-main .nosotros-container .actualidad .antes,
-main .nosotros-container .actualidad .ahora {
+.main-nosotros .nosotros-container .comienzos .antes,
+.main-nosotros .nosotros-container .comienzos .ahora,
+.main-nosotros .nosotros-container .actualidad .antes,
+.main-nosotros .nosotros-container .actualidad .ahora {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,10 +279,10 @@ main .nosotros-container .actualidad .ahora {
   margin: 2rem;
   width: 50%;
 }
-main .nosotros-container .comienzos .resaltado,
-main .nosotros-container .actualidad .resaltado {
+.main-nosotros .nosotros-container .comienzos .resaltado,
+.main-nosotros .nosotros-container .actualidad .resaltado {
   font-weight: bold;
-  color: black;
+  color: #0e185f;
 }
 
 .actualidad {
@@ -287,69 +292,80 @@ main .nosotros-container .actualidad .resaltado {
 .pie-nosotros {
   text-align: center;
   padding-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #0e185f;
 }
 
-main .titulo-galeria {
+.main-galeria {
+  margin: 2rem;
+}
+.main-galeria .titulo-galeria {
+  text-align: center;
   color: #0e185f;
   padding-bottom: 0.5rem;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #0e185f;
   margin-top: 1rem;
+  border-bottom: 2px solid #0e185f;
+  margin-bottom: 0.5rem;
 }
-main .container-galeria {
+.main-galeria .container-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
-main .container-galeria .galeria-img {
+.main-galeria .container-galeria .galeria-img {
   text-align: center;
+  position: relative;
 }
-main .container-galeria .galeria-img img {
+.main-galeria .container-galeria .galeria-img img {
   max-width: 90%;
   height: auto;
-  padding: 0.5rem;
-  animation: fade 0.7s;
+  transition: transform 0.3s;
+  transform-origin: center center;
 }
-main .container-galeria .galeria-img .card-back {
+.main-galeria .container-galeria .galeria-img .card-back {
   display: none;
 }
-main .container-galeria .galeria-img:hover .card-back {
+.main-galeria .container-galeria .galeria-img:hover img {
+  transform: scale(1.1);
+}
+.main-galeria .container-galeria .galeria-img:hover .card-back {
   display: block;
 }
-main .container-galeria .galeria-img:hover .card-front {
+.main-galeria .container-galeria .galeria-img:hover .card-front {
   display: none;
 }
 
+.main-reservas {
+  margin: 3rem;
+}
 .main-reservas .form-container {
   align-items: center;
-  padding: 0 3rem;
   width: 100%;
   margin: 0 auto;
   gap: 0.7rem;
 }
 .main-reservas .form-container .titulo-reservas {
+  text-align: center;
   color: #0e185f;
   padding-bottom: 0.5rem;
-  text-align: center;
-  margin-bottom: 0.5rem;
-  border-bottom: 2px solid #0e185f;
   margin-top: 1rem;
+  border-bottom: 2px solid #0e185f;
+  margin-bottom: 0.5rem;
 }
 .main-reservas .form-container .form-datos {
   display: flex;
   margin: 2rem 0;
 }
 .main-reservas .form-container .form-datos .formulario {
+  justify-items: center;
+  align-items: center;
   background-color: #0e185f;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
   width: 70%;
   padding: 2rem;
-  align-items: center;
-  justify-items: center;
   gap: 0.7rem;
   border-radius: 20px;
   display: grid;
@@ -457,7 +473,9 @@ main .container-galeria .galeria-img:hover .card-front {
 }
 .main-reservas .form-container .informacion {
   display: flex;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
   margin: 5rem 1rem 0 5rem;
@@ -487,9 +505,82 @@ main .container-galeria .galeria-img:hover .card-front {
 .main-reservas .form-container .ubicacion .maps {
   width: 100%;
   height: auto;
-  box-shadow: 0px 0px 20px 0px rgb(175, 175, 180);
+  box-shadow: 0px 0px 30px 0px rgb(175, 175, 180);
   margin-bottom: 2rem;
   margin-top: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .main-servicios .servicios {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .servicios-1,
+  .servicios-2,
+  .servicios-3 {
+    margin-bottom: 1rem;
+  }
+  .main-nosotros .nosotros-container .comienzos,
+  .main-nosotros .nosotros-container .actualidad {
+    flex-direction: column;
+    gap: 0;
+  }
+  .main-nosotros .nosotros-container .comienzos .img-antes,
+  .main-nosotros .nosotros-container .comienzos .img-actualidad,
+  .main-nosotros .nosotros-container .actualidad .img-antes,
+  .main-nosotros .nosotros-container .actualidad .img-actualidad {
+    width: 90%;
+  }
+  .main-nosotros .nosotros-container .comienzos .antes,
+  .main-nosotros .nosotros-container .comienzos .ahora,
+  .main-nosotros .nosotros-container .actualidad .antes,
+  .main-nosotros .nosotros-container .actualidad .ahora {
+    width: 100%;
+    margin: 0;
+  }
+  .main-galeria .container-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-reservas .form-container .form-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-reservas .form-container .formulario {
+    margin-bottom: 1rem;
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "desde" "hasta" "menores" "adultos" "nombre" "apellido" "tel" "email" "textarea" "submit";
+  }
+  .informacion {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container-fluid .navbar-toggler {
+    border: none;
+  }
+  .banner-container .banner-info {
+    top: 40%;
+  }
+  .banner-container .banner-info .titulo-banner {
+    font-size: 2rem;
+  }
+  .main-servicios .servicios {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-nosotros .nosotros-container .comienzos .img-antes,
+  .main-nosotros .nosotros-container .comienzos .img-actualidad,
+  .main-nosotros .nosotros-container .actualidad .img-antes,
+  .main-nosotros .nosotros-container .actualidad .img-actualidad {
+    width: 90%;
+  }
+  .main-galeria .container-galeria {
+    grid-template-columns: 1fr;
+  }
+  .main-reservas {
+    margin: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
