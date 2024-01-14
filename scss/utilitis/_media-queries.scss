@@ -18,6 +18,7 @@
       .comienzos,
       .actualidad {
         flex-direction: column;
+
         gap: 0;
 
         .img-antes,
@@ -86,7 +87,7 @@
   // HOME
   .banner-container {
     .banner-info {
-      top: 40%;
+      top: 30%;
 
       .titulo-banner {
         font-size: 2rem;
@@ -121,86 +122,69 @@
   }
 
   //RESERVAS
-  .main-reservas {
-    margin: 2rem;
-    .form-container {
-      .titulo-reservas {
-      }
 
-      .form-datos {
-        .formulario {
-          .form-reserva {
-          }
+  @media screen and (max-width: 768px) {
+    .main-reservas {
+      margin: 2rem;
 
-          .nombre,
-          .apellido,
-          .tel,
-          .email {
+      .form-container {
+        text-align: center;
+
+        .form-datos {
+          display: flex;
+          flex-direction: column;
+          margin: 1rem 0;
+
+          .formulario {
+            width: 100%;
+            padding: 1rem;
+            grid-template-areas:
+              "titulo"
+              "desde"
+              "hasta"
+              "menores"
+              "adultos"
+              "nombre"
+              "apellido"
+              "tel"
+              "email"
+              "textarea"
+              "submit";
+
             .form-reserva {
+              .titulo,
+              .desde,
+              .hasta,
+              .menores,
+              .adultos,
+              .nombre,
+              .apellido,
+              .tel,
+              .email,
+              .comentarios,
+              .submit {
+                grid-column: 1;
+                margin: 0;
+                width: 100%;
+              }
             }
-          }
 
-          .desde,
-          .hasta {
-            input[type="date"] {
+            .nombre,
+            .apellido,
+            .tel,
+            .email,
+            .comentarios,
+            .submit {
+              .form-reserva {
+                grid-column: 1;
+                width: auto;
+                padding-left: 0.8rem;
+                margin-left: 0.7rem;
+              }
             }
-          }
-        }
-
-        .desde,
-        .hasta,
-        .menores,
-        .adultos {
-          input {
-            &:hover {
-            }
-          }
-        }
-
-        .menores,
-        .adultos {
-          input {
-          }
-        }
-
-        .nombre,
-        .apellido,
-        .tel,
-        .email {
-          input {
-            &:hover {
-            }
-          }
-        }
-
-        .form-10 {
-          textarea {
-          }
-        }
-
-        .form-11 {
-          .submit {
           }
         }
       }
-    }
-  }
-
-  .informacion {
-    ul {
-      li {
-      }
-
-      iconify-icon {
-      }
-    }
-  }
-
-  .ubicacion {
-    h3 {
-    }
-
-    .maps {
     }
   }
 }

@@ -1,4 +1,5 @@
 .main-nosotros {
+  margin: 3rem;
   .nosotros-container {
     @include flex(column, center, center);
     background-color: nth($list: $colores, $n: 3);

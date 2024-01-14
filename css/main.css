@@ -89,6 +89,9 @@ footer .footer-derechos {
 }
 
 /* BANNER*/
+main {
+  margin: 0;
+}
 main .banner-container {
   display: flex;
   flex-direction: row;
@@ -154,7 +157,7 @@ main .banner-container .banner-info .button-home:hover {
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #0e185f;
 }
-.main-servicios img {
+.main-servicios .main-servicios img {
   width: 100%;
   max-height: 40vh;
   margin: 0 auto;
@@ -225,6 +228,9 @@ main .banner-container .banner-info .button-home:hover {
   transition: 0.7s;
 }
 
+.main-nosotros {
+  margin: 3rem;
+}
 .main-nosotros .nosotros-container {
   display: flex;
   flex-direction: column;
@@ -561,7 +567,7 @@ main .banner-container .banner-info .button-home:hover {
     border: none;
   }
   .banner-container .banner-info {
-    top: 40%;
+    top: 30%;
   }
   .banner-container .banner-info .titulo-banner {
     font-size: 2rem;
@@ -578,8 +584,49 @@ main .banner-container .banner-info .button-home:hover {
   .main-galeria .container-galeria {
     grid-template-columns: 1fr;
   }
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
   .main-reservas {
     margin: 2rem;
+  }
+  .main-reservas .form-container {
+    text-align: center;
+  }
+  .main-reservas .form-container .form-datos {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .main-reservas .form-container .form-datos .formulario {
+    width: 100%;
+    padding: 1rem;
+    grid-template-areas: "titulo" "desde" "hasta" "menores" "adultos" "nombre" "apellido" "tel" "email" "textarea" "submit";
+  }
+  .main-reservas .form-container .form-datos .formulario .form-reserva .titulo,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .desde,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .hasta,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .menores,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .adultos,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .nombre,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .apellido,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .tel,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .email,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .comentarios,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .submit {
+    grid-column: 1;
+    margin: 0;
+    width: 100%;
+  }
+  .main-reservas .form-container .form-datos .formulario .nombre .form-reserva,
+  .main-reservas .form-container .form-datos .formulario .apellido .form-reserva,
+  .main-reservas .form-container .form-datos .formulario .tel .form-reserva,
+  .main-reservas .form-container .form-datos .formulario .email .form-reserva,
+  .main-reservas .form-container .form-datos .formulario .comentarios .form-reserva,
+  .main-reservas .form-container .form-datos .formulario .submit .form-reserva {
+    grid-column: 1;
+    width: auto;
+    padding-left: 0.8rem;
+    margin-left: 0.7rem;
   }
 }
 

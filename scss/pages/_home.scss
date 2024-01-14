@@ -1,6 +1,7 @@
 /* BANNER*/
 
 main {
+  margin: 0;
   .banner-container {
     @include flex(row, center, center);
     // display: flex;

@@ -684,16 +684,18 @@
 
   /*RESERVAS*/
 
-  .form-container {
+  /* .form-container {
     text-align: center;
     padding: 0 1.5rem;
-  }
+  } */
 
-  .form-datos {
+  /* .form-datos {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 0;
-  }
+  } */
 
-  .formulario {
+  /* .formulario {
     width: 100%;
     padding: 1rem;
     grid-template-areas:
@@ -708,14 +710,9 @@
       "email"
       "textarea"
       "submit";
-  }
+  } */
 
-  .form-datos {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .titulo,
+  /* .titulo,
   .desdde,
   .hasta,
   .menores,
@@ -729,16 +726,16 @@
     grid-column: 1;
     margin: 0;
     width: 100%;
-  }
+  } */
 
-  .nombre input,
+  /* .nombre input,
   .apellido input,
   .tel input,
   .email input {
     width: auto;
     padding-left: 0.8rem;
     margin-left: 0.7rem;
-  }
+  } */
 
   .informacion {
     margin: 2rem 1rem 0 2rem;
