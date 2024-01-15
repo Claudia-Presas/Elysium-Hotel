@@ -147,7 +147,6 @@ main .banner-container .banner-info .button-home:hover {
 
 /* SERVICIOS*/
 .main-servicios {
-  border: 1px solid black;
   position: relative;
   width: 100%;
 }
@@ -161,7 +160,7 @@ main .banner-container .banner-info .button-home:hover {
 }
 .main-servicios .servicios-img {
   width: 100%;
-  max-height: 40vh;
+  max-height: 50vh;
   margin: 0 auto;
   padding-bottom: 0.5rem;
   object-fit: cover;
@@ -174,7 +173,7 @@ main .banner-container .banner-info .button-home:hover {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .main-servicios .servicios .servicios-1,
 .main-servicios .servicios .servicios-2,
@@ -231,7 +230,7 @@ main .banner-container .banner-info .button-home:hover {
 }
 
 .main-nosotros {
-  margin: 3rem;
+  margin: 1rem;
 }
 .main-nosotros .nosotros-container {
   display: flex;
@@ -262,14 +261,14 @@ main .banner-container .banner-info .button-home:hover {
 }
 .main-nosotros .nosotros-container .comienzos .img-container,
 .main-nosotros .nosotros-container .actualidad .img-container {
-  max-width: 50%;
+  max-width: 40%;
   margin: 0 auto;
 }
 .main-nosotros .nosotros-container .comienzos .img-antes,
 .main-nosotros .nosotros-container .comienzos .img-actualidad,
 .main-nosotros .nosotros-container .actualidad .img-antes,
 .main-nosotros .nosotros-container .actualidad .img-actualidad {
-  width: 60%;
+  width: 50%;
   height: auto;
   object-fit: cover;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
@@ -285,7 +284,7 @@ main .banner-container .banner-info .button-home:hover {
   font-size: 1rem;
   text-align: center;
   margin: 2rem;
-  width: 50%;
+  width: 40%;
 }
 .main-nosotros .nosotros-container .comienzos .resaltado,
 .main-nosotros .nosotros-container .actualidad .resaltado {
@@ -305,7 +304,7 @@ main .banner-container .banner-info .button-home:hover {
 }
 
 .main-galeria {
-  margin: 2rem;
+  margin: 1rem;
 }
 .main-galeria .titulo-galeria {
   text-align: center;
@@ -337,7 +336,7 @@ main .banner-container .banner-info .button-home:hover {
   display: none;
 }
 .main-galeria .container-galeria .galeria-img:hover img {
-  transform: scale(1.1);
+  transform: scale(0.9);
 }
 .main-galeria .container-galeria .galeria-img:hover .card-back {
   display: block;
@@ -347,7 +346,7 @@ main .banner-container .banner-info .button-home:hover {
 }
 
 .main-reservas {
-  margin: 3rem;
+  margin: 1rem;
 }
 .main-reservas .form-container {
   align-items: center;
@@ -575,7 +574,7 @@ main .banner-container .banner-info .button-home:hover {
     border: none;
   }
   .banner-container .banner-info {
-    top: 30%;
+    top: 20%;
   }
   .banner-container .banner-info .titulo-banner {
     font-size: 2rem;

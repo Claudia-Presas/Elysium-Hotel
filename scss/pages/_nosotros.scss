@@ -1,5 +1,5 @@
 .main-nosotros {
-  margin: 3rem;
+  margin: 1rem;
   .nosotros-container {
     @include flex(column, center, center);
     background-color: nth($list: $colores, $n: 3);
@@ -26,13 +26,13 @@
       gap: 2rem;
 
       .img-container {
-        max-width: 50%;
+        max-width: 40%;
         margin: 0 auto;
       }
 
       .img-antes,
       .img-actualidad {
-        width: 60%;
+        width: 50%;
         height: auto;
         object-fit: cover;
         box-shadow: 0px 0px 30px 0px nth($list: $colores, $n: 4);
@@ -44,7 +44,7 @@
         font-size: 1rem;
         text-align: center;
         margin: 2rem;
-        width: 50%;
+        width: 40%;
       }
 
       .resaltado {
