@@ -91,6 +91,7 @@ footer .footer-derechos {
 /* BANNER*/
 main {
   margin: 0;
+  width: 100%;
 }
 main .banner-container {
   display: flex;
@@ -98,7 +99,7 @@ main .banner-container {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(../multimedia/img/banner-1.jpg) center;
+  background: url(../multimedia/img/banner-home.jpg) center;
   background-repeat: no-repeat;
   height: 80vh;
   color: white;

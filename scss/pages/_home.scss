@@ -2,13 +2,11 @@
 
 main {
   margin: 0;
+  width: 100%;
   .banner-container {
     @include flex(row, center, center);
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     position: relative;
-    background: url(../multimedia/img/banner-1.jpg) center;
+    background: url(../multimedia/img/banner-home.jpg) center;
     background-repeat: no-repeat;
     height: 80vh;
     color: nth($list: $colores, $n: 3);
