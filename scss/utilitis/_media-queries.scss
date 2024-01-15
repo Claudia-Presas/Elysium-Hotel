@@ -9,9 +9,15 @@
   .servicios-1,
   .servicios-2,
   .servicios-3 {
-    margin-bottom: 1rem;
+    margin: 0 auto;
   }
 
+  .servicios-1 {
+    margin-bottom: 1rem;
+  }
+  .servicios-3 {
+    margin-top: 1rem;
+  }
   //NOSOTROS
   .main-nosotros {
     .nosotros-container {
@@ -122,68 +128,110 @@
   }
 
   //RESERVAS
+  .main-reservas {
+    border: 1px solid black;
+    .form-container {
+      width: 100%;
+      border: 1px solid green;
+      text-align: center;
+      padding: 0 1.5rem;
+      .titulo-reservas {
+      }
 
-  @media screen and (max-width: 768px) {
-    .main-reservas {
-      margin: 2rem;
-
-      .form-container {
-        text-align: center;
-
-        .form-datos {
-          display: flex;
-          flex-direction: column;
-          margin: 1rem 0;
-
-          .formulario {
-            width: 100%;
-            padding: 1rem;
-            grid-template-areas:
-              "titulo"
-              "desde"
-              "hasta"
-              "menores"
-              "adultos"
-              "nombre"
-              "apellido"
-              "tel"
-              "email"
-              "textarea"
-              "submit";
-
-            .form-reserva {
-              .titulo,
-              .desde,
-              .hasta,
-              .menores,
-              .adultos,
-              .nombre,
-              .apellido,
-              .tel,
-              .email,
-              .comentarios,
-              .submit {
-                grid-column: 1;
-                margin: 0;
-                width: 100%;
-              }
+      .form-datos {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem 0;
+        .formulario {
+          border: 1px solid red;
+          width: auto;
+          padding: 1rem;
+          grid-template-areas:
+            "titulo"
+            "desde"
+            "hasta"
+            "menores"
+            "adultos"
+            "nombre"
+            "apellido"
+            "tel"
+            "email"
+            "textarea"
+            "submit";
+          .form-reserva {
+            .titulo,
+            .desdde,
+            .hasta,
+            .menores,
+            .adultos,
+            .nombre,
+            .apellido,
+            .tel,
+            .email,
+            .textarea,
+            .submit {
+              grid-column: 1;
+              margin: 0;
+              width: 100%;
             }
 
             .nombre,
             .apellido,
             .tel,
-            .email,
-            .comentarios,
-            .submit {
+            .email {
               .form-reserva {
-                grid-column: 1;
-                width: auto;
-                padding-left: 0.8rem;
-                margin-left: 0.7rem;
+              }
+            }
+
+            .desde,
+            .hasta {
+              input[type="date"] {
               }
             }
           }
+
+          .desde,
+          .hasta,
+          .menores,
+          .adultos {
+            input {
+              &:hover {
+              }
+            }
+          }
+
+          .menores,
+          .adultos {
+            input {
+            }
+          }
+
+          .nombre,
+          .apellido,
+          .tel,
+          .email {
+            input {
+              &:hover {
+              }
+            }
+          }
+
+          .form-10 {
+            textarea {
+            }
+          }
+
+          .form-11 {
+            .submit {
+            }
+          }
         }
+      }
+    }
+
+    .informacion {
+      ul {
       }
     }
   }

@@ -146,18 +146,19 @@ main .banner-container .banner-info .button-home:hover {
 
 /* SERVICIOS*/
 .main-servicios {
+  border: 1px solid black;
   position: relative;
   width: 100%;
 }
-.main-servicios h1 {
-  color: #0e185f;
-  padding-top: 1.5rem;
-  padding-bottom: 0.5rem;
+.main-servicios .titulo-servicios {
   text-align: center;
-  margin-bottom: 0.5rem;
+  color: #0e185f;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
   border-bottom: 2px solid #0e185f;
+  margin-bottom: 0.5rem;
 }
-.main-servicios .main-servicios img {
+.main-servicios .servicios-img {
   width: 100%;
   max-height: 40vh;
   margin: 0 auto;
@@ -184,8 +185,8 @@ main .banner-container .banner-info .button-home:hover {
   height: auto;
   padding: 1rem;
   max-width: 20rem;
+  border: 1px solid #0e185f;
   border-radius: 15px;
-  box-shadow: 0px 0px 20px 0px rgb(248, 103, 221);
   width: 100%;
 }
 .main-servicios .servicios .servicios-1 ul,
@@ -523,7 +524,13 @@ main .banner-container .banner-info .button-home:hover {
   .servicios-1,
   .servicios-2,
   .servicios-3 {
+    margin: 0 auto;
+  }
+  .servicios-1 {
     margin-bottom: 1rem;
+  }
+  .servicios-3 {
+    margin-top: 1rem;
   }
   .main-nosotros .nosotros-container .comienzos,
   .main-nosotros .nosotros-container .actualidad {
@@ -584,26 +591,29 @@ main .banner-container .banner-info .button-home:hover {
   .main-galeria .container-galeria {
     grid-template-columns: 1fr;
   }
-}
-@media screen and (max-width: 768px) and (max-width: 768px) {
   .main-reservas {
-    margin: 2rem;
+    border: 1px solid black;
   }
   .main-reservas .form-container {
+    width: 100%;
+    border: 1px solid green;
     text-align: center;
+    padding: 0 1.5rem;
   }
   .main-reservas .form-container .form-datos {
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
   }
   .main-reservas .form-container .form-datos .formulario {
-    width: 100%;
+    border: 1px solid red;
+    width: auto;
     padding: 1rem;
     grid-template-areas: "titulo" "desde" "hasta" "menores" "adultos" "nombre" "apellido" "tel" "email" "textarea" "submit";
   }
   .main-reservas .form-container .form-datos .formulario .form-reserva .titulo,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .desde,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .desdde,
   .main-reservas .form-container .form-datos .formulario .form-reserva .hasta,
   .main-reservas .form-container .form-datos .formulario .form-reserva .menores,
   .main-reservas .form-container .form-datos .formulario .form-reserva .adultos,
@@ -611,22 +621,11 @@ main .banner-container .banner-info .button-home:hover {
   .main-reservas .form-container .form-datos .formulario .form-reserva .apellido,
   .main-reservas .form-container .form-datos .formulario .form-reserva .tel,
   .main-reservas .form-container .form-datos .formulario .form-reserva .email,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .comentarios,
+  .main-reservas .form-container .form-datos .formulario .form-reserva .textarea,
   .main-reservas .form-container .form-datos .formulario .form-reserva .submit {
     grid-column: 1;
     margin: 0;
     width: 100%;
-  }
-  .main-reservas .form-container .form-datos .formulario .nombre .form-reserva,
-  .main-reservas .form-container .form-datos .formulario .apellido .form-reserva,
-  .main-reservas .form-container .form-datos .formulario .tel .form-reserva,
-  .main-reservas .form-container .form-datos .formulario .email .form-reserva,
-  .main-reservas .form-container .form-datos .formulario .comentarios .form-reserva,
-  .main-reservas .form-container .form-datos .formulario .submit .form-reserva {
-    grid-column: 1;
-    width: auto;
-    padding-left: 0.8rem;
-    margin-left: 0.7rem;
   }
 }
 

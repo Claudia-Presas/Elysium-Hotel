@@ -161,9 +161,6 @@
     .informacion {
       display: flex;
       @include flex(column, center, center);
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
       text-align: center;
       margin: 5rem 1rem 0 5rem;
 

@@ -1,26 +1,27 @@
 /* SERVICIOS*/
 
 .main-servicios {
+  border: 1px solid black;
   position: relative;
   width: 100%;
 
-  h1 {
-    color: #0e185f;
-    padding-top: 1.5rem;
-    padding-bottom: 0.5rem;
+  .titulo-servicios {
     text-align: center;
+    color: nth($list: $colores, $n: 1);
+    padding-bottom: 0.5rem;
+    margin-top: 1rem;
+    border-bottom: 2px solid nth($list: $colores, $n: 1);
     margin-bottom: 0.5rem;
-    border-bottom: 2px solid #0e185f;
   }
 
-  .main-servicios img {
+  .servicios-img {
     width: 100%;
     max-height: 40vh;
     margin: 0 auto;
     padding-bottom: 0.5rem;
     object-fit: cover;
     display: block;
-    border-bottom: 2px solid #0e185f;
+    border-bottom: 2px solid nth($list: $colores, $n: 1);
   }
 
   .servicios {
@@ -28,6 +29,7 @@
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
+
     gap: 0.5rem;
     padding: 2rem;
 
@@ -35,15 +37,13 @@
     .servicios-2,
     .servicios-3 {
       @include flex(column, center, center);
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
       height: auto;
       padding: 1rem;
       max-width: 20rem;
+      border: 1px solid nth($list: $colores, $n: 1);
       border-radius: 15px;
-      box-shadow: 0px 0px 20px 0px nth($list: $colores, $n: 4);
+      // box-shadow: 0px 0px 20px 0px nth($list: $colores, $n: 4);
+
       width: 100%;
 
       ul {
