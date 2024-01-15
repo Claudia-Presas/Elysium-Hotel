@@ -311,12 +311,13 @@ main .banner-container .banner-info .button-home:hover {
   margin-bottom: 0.5rem;
 }
 .main-galeria .container-galeria {
+  justify-content: center;
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 10px;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 2rem;
 }
 .main-galeria .container-galeria .galeria-img {
   text-align: center;

@@ -9,12 +9,13 @@
   }
 
   .container-galeria {
+    justify-content: center;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 2rem;
 
     .galeria-img {
       text-align: center;
