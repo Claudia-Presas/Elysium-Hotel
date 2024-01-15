@@ -1,5 +1,4 @@
 .main-galeria {
-  margin: 1rem;
   .titulo-galeria {
     text-align: center;
     color: nth($list: $colores, $n: 1);
@@ -13,7 +12,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
 
@@ -27,6 +26,7 @@
         // padding: 0.5rem;
         transition: transform 0.3s;
         transform-origin: center center;
+        border-radius: 5px;
       }
 
       .card-back {
@@ -35,7 +35,7 @@
 
       &:hover {
         img {
-          transform: scale(0.9);
+          transform: scale(1) center;
         }
 
         .card-back {

@@ -160,7 +160,7 @@ main .banner-container .banner-info .button-home:hover {
 }
 .main-servicios .servicios-img {
   width: 100%;
-  max-height: 50vh;
+  max-height: 40vh;
   margin: 0 auto;
   padding-bottom: 0.5rem;
   object-fit: cover;
@@ -174,6 +174,7 @@ main .banner-container .banner-info .button-home:hover {
   align-items: center;
   gap: 0.5rem;
   padding: 1rem;
+  margin-bottom: 2rem 0;
 }
 .main-servicios .servicios .servicios-1,
 .main-servicios .servicios .servicios-2,
@@ -183,10 +184,10 @@ main .banner-container .banner-info .button-home:hover {
   justify-content: center;
   align-items: center;
   height: auto;
-  padding: 1rem;
   max-width: 20rem;
-  border: 1px solid #0e185f;
+  border: 1px solid #00ffdd;
   border-radius: 15px;
+  box-shadow: 0px 10px 10px 0px #00ffdd;
   width: 100%;
 }
 .main-servicios .servicios .servicios-1 ul,
@@ -217,6 +218,7 @@ main .banner-container .banner-info .button-home:hover {
   color: white;
   width: 6rem;
   height: 2rem;
+  margin-bottom: 1rem;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
@@ -229,9 +231,6 @@ main .banner-container .banner-info .button-home:hover {
   transition: 0.7s;
 }
 
-.main-nosotros {
-  margin: 1rem;
-}
 .main-nosotros .nosotros-container {
   display: flex;
   flex-direction: column;
@@ -268,10 +267,10 @@ main .banner-container .banner-info .button-home:hover {
 .main-nosotros .nosotros-container .comienzos .img-actualidad,
 .main-nosotros .nosotros-container .actualidad .img-antes,
 .main-nosotros .nosotros-container .actualidad .img-actualidad {
-  width: 50%;
+  width: 45%;
   height: auto;
   object-fit: cover;
-  box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
+  box-shadow: 0px 0px 30px 0px #00ffdd;
 }
 .main-nosotros .nosotros-container .comienzos .antes,
 .main-nosotros .nosotros-container .comienzos .ahora,
@@ -303,9 +302,6 @@ main .banner-container .banner-info .button-home:hover {
   color: #0e185f;
 }
 
-.main-galeria {
-  margin: 1rem;
-}
 .main-galeria .titulo-galeria {
   text-align: center;
   color: #0e185f;
@@ -318,7 +314,7 @@ main .banner-container .banner-info .button-home:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  padding: 20px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -331,12 +327,13 @@ main .banner-container .banner-info .button-home:hover {
   height: auto;
   transition: transform 0.3s;
   transform-origin: center center;
+  border-radius: 5px;
 }
 .main-galeria .container-galeria .galeria-img .card-back {
   display: none;
 }
 .main-galeria .container-galeria .galeria-img:hover img {
-  transform: scale(0.9);
+  transform: scale(1) center;
 }
 .main-galeria .container-galeria .galeria-img:hover .card-back {
   display: block;
@@ -553,6 +550,9 @@ main .banner-container .banner-info .button-home:hover {
   .main-galeria .container-galeria {
     grid-template-columns: repeat(2, 1fr);
   }
+  .main-galeria img {
+    transform: scale(0.8) center;
+  }
   .main-reservas .form-container .form-datos {
     display: flex;
     flex-direction: column;
@@ -574,7 +574,7 @@ main .banner-container .banner-info .button-home:hover {
     border: none;
   }
   .banner-container .banner-info {
-    top: 20%;
+    top: 30%;
   }
   .banner-container .banner-info .titulo-banner {
     font-size: 2rem;

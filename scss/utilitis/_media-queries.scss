@@ -46,6 +46,9 @@
     .container-galeria {
       grid-template-columns: repeat(2, 1fr);
     }
+    img {
+      transform: scale(0.8) center;
+    }
   }
 
   //RESERVAS
@@ -94,7 +97,7 @@
 
   .banner-container {
     .banner-info {
-      top: 20%;
+      top: 30%;
 
       .titulo-banner {
         font-size: 2rem;

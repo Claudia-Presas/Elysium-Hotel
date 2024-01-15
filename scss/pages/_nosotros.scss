@@ -1,5 +1,5 @@
 .main-nosotros {
-  margin: 1rem;
+  // margin: 1rem;
   .nosotros-container {
     @include flex(column, center, center);
     background-color: nth($list: $colores, $n: 3);
@@ -32,10 +32,10 @@
 
       .img-antes,
       .img-actualidad {
-        width: 50%;
+        width: 45%;
         height: auto;
         object-fit: cover;
-        box-shadow: 0px 0px 30px 0px nth($list: $colores, $n: 4);
+        box-shadow: 0px 0px 30px 0px nth($list: $colores, $n: 2);
       }
 
       .antes,
