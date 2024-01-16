@@ -344,15 +344,10 @@ main .banner-container .banner-info .button-home:hover {
 }
 
 .main-reservas {
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.main-reservas .form-container {
-  align-items: center;
-  width: 100%;
-  margin: 0 auto;
-  gap: 0.7rem;
-}
-.main-reservas .form-container .titulo-reservas {
+.main-reservas .titulo-reservas {
   text-align: center;
   color: #0e185f;
   padding-bottom: 0.5rem;
@@ -360,154 +355,122 @@ main .banner-container .banner-info .button-home:hover {
   border-bottom: 2px solid #0e185f;
   margin-bottom: 0.5rem;
 }
-.main-reservas .form-container .form-datos {
+.main-reservas .form-container {
   display: flex;
-  margin: 2rem 0;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
-.main-reservas .form-container .form-datos .formulario {
-  justify-items: center;
-  align-items: center;
+.main-reservas .form-container .formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  padding: 2rem 1rem;
+  color: white;
   background-color: #0e185f;
   box-shadow: 0px 0px 30px 0px rgb(248, 103, 221);
-  width: 70%;
-  padding: 2rem;
-  gap: 0.7rem;
   border-radius: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "titulo titulo" "desde hasta" "menores adultos" "nombre apellido" "tel email" "textarea textarea" "submit submit";
 }
-.main-reservas .form-container .form-datos .formulario .form-reserva {
-  font-size: 15px;
-  text-align: center;
-  font-weight: bold;
-  color: white;
-  margin: 10px;
+.main-reservas .form-container .formulario .formulario-bloque {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
-.main-reservas .form-container .form-datos .formulario .nombre .form-reserva,
-.main-reservas .form-container .form-datos .formulario .apellido .form-reserva,
-.main-reservas .form-container .form-datos .formulario .tel .form-reserva,
-.main-reservas .form-container .form-datos .formulario .email .form-reserva {
-  text-align: left;
+.main-reservas .form-container .formulario .formulario-bloque .input-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
-.main-reservas .form-container .form-datos .formulario .desde input[type=date]::-webkit-calendar-picker-indicator,
-.main-reservas .form-container .form-datos .formulario .hasta input[type=date]::-webkit-calendar-picker-indicator {
-  color: white;
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque {
+  display: flex;
+  flex-direction: column;
 }
-.main-reservas .form-container .form-datos .formulario .desde input,
-.main-reservas .form-container .form-datos .formulario .hasta input,
-.main-reservas .form-container .form-datos .formulario .menores input,
-.main-reservas .form-container .form-datos .formulario .adultos input {
-  border: 1px solid white;
-  border-radius: 5px;
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque input {
+  background-color: transparent;
+}
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque .fecha-personas {
   width: 9rem;
   height: 2rem;
   text-transform: uppercase;
   text-align: center;
+  border-radius: 5px;
   font-size: 13px;
   padding: 1rem;
+  border: 1px solid white;
   color: white;
-  background-color: transparent;
 }
-.main-reservas .form-container .form-datos .formulario .desde input:hover,
-.main-reservas .form-container .form-datos .formulario .hasta input:hover,
-.main-reservas .form-container .form-datos .formulario .menores input:hover,
-.main-reservas .form-container .form-datos .formulario .adultos input:hover {
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque .fecha-personas:hover {
   color: #0e185f;
   background-color: #00ffdd;
 }
-.main-reservas .form-container .form-datos .formulario .menores input,
-.main-reservas .form-container .form-datos .formulario .adultos input {
-  padding-left: 5px;
-  width: 6rem;
-  height: 2rem;
-}
-.main-reservas .form-container .form-datos .formulario .nombre input,
-.main-reservas .form-container .form-datos .formulario .apellido input,
-.main-reservas .form-container .form-datos .formulario .tel input,
-.main-reservas .form-container .form-datos .formulario .email input {
-  border-style: none;
-  border-bottom: 1px solid white;
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque .datos-personales {
   width: 13rem;
   height: 2rem;
-  font-size: 13px;
   text-align: left;
+  font-size: 13px;
+  border-style: none;
+  border-bottom: 1px solid white;
   padding-left: 0.7rem;
   background-color: transparent;
 }
-.main-reservas .form-container .form-datos .formulario .nombre input:hover,
-.main-reservas .form-container .form-datos .formulario .apellido input:hover,
-.main-reservas .form-container .form-datos .formulario .tel input:hover,
-.main-reservas .form-container .form-datos .formulario .email input:hover {
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque .datos-personales:hover {
   color: #0e185f;
   background-color: #00ffdd;
 }
-.main-reservas .form-container .form-datos .formulario .form-10 {
-  grid-column: 1/3;
+.main-reservas .form-container .formulario .formulario-bloque .input-columna .input-bloque p {
+  margin-bottom: 0;
+}
+.main-reservas .form-container .formulario .comentario-bloque {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 0.5rem;
+}
+.main-reservas .form-container .formulario .comentario-bloque .textarea {
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  width: 90%;
-  padding: 1rem;
-  margin-top: 0.7rem;
-}
-.main-reservas .form-container .form-datos .formulario .form-10 textarea {
-  width: 100%;
-  border-style: none;
   background-color: transparent;
-  color: white;
+  padding: 1rem;
 }
-.main-reservas .form-container .form-datos .formulario .form-11 {
-  grid-column: 1/3;
-  width: 90%;
-}
-.main-reservas .form-container .form-datos .formulario .form-11 .submit {
-  width: 100%;
-  border-style: none;
-  background-color: #00ffdd;
-  color: #0e185f;
-}
-.main-reservas .form-container .form-datos .formulario .submit {
-  color: #0e185f;
+.main-reservas .form-container .formulario .comentario-bloque .submit {
   height: 2.5rem;
   font-size: 1.3rem;
   font-weight: bold;
-}
-.main-reservas .form-container .form-datos .formulario .submit:hover {
-  background-color: white;
+  background-color: #00ffdd;
   color: #0e185f;
 }
-.main-reservas .form-container .informacion {
-  display: flex;
+.main-reservas .form-container .formulario .comentario-bloque .submit:hover {
+  background-color: white;
+}
+.main-reservas .form-container .formulario .informacion {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 5rem 1rem 0 5rem;
+  justify-content: space-evenly;
+  width: 50%;
+  gap: 0.3rem;
 }
-.main-reservas .form-container .informacion ul {
+.main-reservas .form-container .formulario .informacion .contacto .contacto ul .contacto li {
   list-style: none;
-  padding: 1rem 0 0.5rem 0;
 }
-.main-reservas .form-container .informacion ul li {
+.main-reservas .ubicacion {
   display: flex;
-  align-items: center;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.main-reservas .form-container .informacion ul li iconify-icon {
-  margin-right: 10px;
-  font-size: 1.5rem;
-  color: #0e185f;
-}
-.main-reservas .form-container .ubicacion h3 {
+.main-reservas .ubicacion h3 {
   margin-left: 1rem;
   text-align: left;
   font-size: 1.5rem;
   font-weight: bold;
   color: #0e185f;
 }
-.main-reservas .form-container .ubicacion .maps {
+.main-reservas .ubicacion .maps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
   box-shadow: 0px 0px 30px 0px rgb(175, 175, 180);
@@ -554,22 +517,48 @@ main .banner-container .banner-info .button-home:hover {
   .main-galeria img {
     transform: scale(0.8) center;
   }
-  .main-reservas .form-container .form-datos {
-    display: flex;
+  .main-reservas {
     flex-direction: column;
-    align-items: center;
+  }
+  .form-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+  }
+  .form-container .formulario {
     justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
   }
-  .main-reservas .form-container .formulario {
-    margin-bottom: 1rem;
-    width: 90%;
-    grid-template-columns: 1fr;
-    grid-template-areas: "titulo" "desde" "hasta" "menores" "adultos" "nombre" "apellido" "tel" "email" "textarea" "submit";
+  .form-container .formulario .formulario-bloque .fecha-personas:hover {
+    color: #0e185f;
+    background-color: #00ffdd;
   }
-  .informacion {
-    margin-top: 2rem;
+  .form-container .formulario .formulario-bloque .datos-personales:hover {
+    color: #0e185f;
+    background-color: #00ffdd;
+  }
+  .submit:hover {
+    background-color: white;
   }
 }
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ubicacion h3 {
+  margin-left: 1rem;
+}
+.ubicacion .maps {
+  height: 6rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 @media screen and (max-width: 768px) {
   .container-fluid .navbar-toggler {
     border: none;
@@ -592,41 +581,26 @@ main .banner-container .banner-info .button-home:hover {
   .main-galeria .container-galeria {
     grid-template-columns: 1fr;
   }
-  .main-reservas {
-    border: 1px solid black;
-  }
-  .main-reservas .form-container {
+  .main-reservas .form-container .formulario {
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border: 1px solid green;
-    text-align: center;
-    padding: 0 1.5rem;
   }
-  .main-reservas .form-container .form-datos {
-    border: 1px solid black;
-    display: flex;
+  .main-reservas .form-container .formulario .formulario-bloque {
     flex-direction: column;
-    margin: 1rem 0;
+    justify-content: center;
+    align-items: center;
   }
-  .main-reservas .form-container .form-datos .formulario {
-    border: 1px solid red;
-    width: auto;
-    padding: 1rem;
-    grid-template-areas: "titulo" "desde" "hasta" "menores" "adultos" "nombre" "apellido" "tel" "email" "textarea" "submit";
+  .main-reservas .form-container .formulario .formulario-bloque .fecha-personas:hover {
+    color: #0e185f;
+    background-color: #00ffdd;
   }
-  .main-reservas .form-container .form-datos .formulario .form-reserva .titulo,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .desdde,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .hasta,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .menores,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .adultos,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .nombre,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .apellido,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .tel,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .email,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .textarea,
-  .main-reservas .form-container .form-datos .formulario .form-reserva .submit {
-    grid-column: 1;
-    margin: 0;
-    width: 100%;
+  .main-reservas .form-container .formulario .formulario-bloque .datos-personales:hover {
+    color: #0e185f;
+    background-color: #00ffdd;
+  }
+  .main-reservas .submit:hover {
+    background-color: white;
   }
 }
 

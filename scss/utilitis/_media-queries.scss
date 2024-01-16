@@ -53,35 +53,59 @@
 
   //RESERVAS
   .main-reservas {
-    .form-container {
-      .form-datos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .formulario {
-        margin-bottom: 1rem;
-        width: 90%;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-          "titulo"
-          "desde"
-          "hasta"
-          "menores"
-          "adultos"
-          "nombre"
-          "apellido"
-          "tel"
-          "email"
-          "textarea"
-          "submit";
+    flex-direction: column;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+
+    .formulario {
+      justify-content: center;
+      align-items: center;
+      width: 70%;
+      margin: 0 auto;
+
+      .formulario-bloque {
+        .fecha-personas {
+          &:hover {
+            color: nth($list: $colores, $n: 1);
+            background-color: nth($list: $colores, $n: 2);
+          }
+        }
+
+        .datos-personales {
+          &:hover {
+            color: nth($list: $colores, $n: 1);
+            background-color: nth($list: $colores, $n: 2);
+          }
+        }
       }
     }
   }
+  .submit {
+    &:hover {
+      background-color: nth($list: $colores, $n: 3);
+    }
+  }
+}
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-  .informacion {
-    margin-top: 2rem;
+.ubicacion {
+  h3 {
+    margin-left: 1rem;
+  }
+
+  .maps {
+    height: 6rem;
+    margin-bottom: 0;
+    margin-top: 0;
   }
 }
 
@@ -124,6 +148,7 @@
       }
     }
   }
+
   // GALERIA
   .main-galeria {
     .container-galeria {
@@ -133,109 +158,35 @@
 
   //RESERVAS
   .main-reservas {
-    border: 1px solid black;
     .form-container {
-      width: 100%;
-      border: 1px solid green;
-      text-align: center;
-      padding: 0 1.5rem;
-      .titulo-reservas {
-      }
+      .formulario {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
-      .form-datos {
-        border: 1px solid black;
-        display: flex;
-        flex-direction: column;
-        margin: 1rem 0;
-        .formulario {
-          border: 1px solid red;
-          width: auto;
-          padding: 1rem;
-          grid-template-areas:
-            "titulo"
-            "desde"
-            "hasta"
-            "menores"
-            "adultos"
-            "nombre"
-            "apellido"
-            "tel"
-            "email"
-            "textarea"
-            "submit";
-          .form-reserva {
-            .titulo,
-            .desdde,
-            .hasta,
-            .menores,
-            .adultos,
-            .nombre,
-            .apellido,
-            .tel,
-            .email,
-            .textarea,
-            .submit {
-              grid-column: 1;
-              margin: 0;
-              width: 100%;
-            }
-
-            .nombre,
-            .apellido,
-            .tel,
-            .email {
-              .form-reserva {
-              }
-            }
-
-            .desde,
-            .hasta {
-              input[type="date"] {
-              }
+        .formulario-bloque {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .fecha-personas {
+            &:hover {
+              color: nth($list: $colores, $n: 1);
+              background-color: nth($list: $colores, $n: 2);
             }
           }
 
-          .desde,
-          .hasta,
-          .menores,
-          .adultos {
-            input {
-              &:hover {
-              }
-            }
-          }
-
-          .menores,
-          .adultos {
-            input {
-            }
-          }
-
-          .nombre,
-          .apellido,
-          .tel,
-          .email {
-            input {
-              &:hover {
-              }
-            }
-          }
-
-          .form-10 {
-            textarea {
-            }
-          }
-
-          .form-11 {
-            .submit {
+          .datos-personales {
+            &:hover {
+              color: nth($list: $colores, $n: 1);
+              background-color: nth($list: $colores, $n: 2);
             }
           }
         }
       }
     }
-
-    .informacion {
-      ul {
+    .submit {
+      &:hover {
+        background-color: nth($list: $colores, $n: 3);
       }
     }
   }

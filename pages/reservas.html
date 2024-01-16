@@ -85,29 +85,46 @@
         </div>
       </nav>
     </header>
+
     <main class="main-reservas">
+      <h1 class="titulo-reservas">Hace tu reserva</h1>
+
       <section class="form-container">
-        <h1 class="form-1 titulo-reservas">Hace tu reserva</h1>
-        <div class="form-datos">
-          <form class="formulario">
-            <div class="form-2 desde">
-              <label for="desde">
-                <p class="form-reserva">Desde</p>
-                <input type="date" name="desde" id="desde" required />
-              </label>
-            </div>
-
-            <div class="form-3 hasta">
-              <label for="hasta">
-                <p class="form-reserva">Hasta</p>
-                <input type="date" name="hasta" id="hasta" required />
-              </label>
-            </div>
-
-            <div class="form-4 menores">
-              <label for="menores">
-                <p class="form-reserva">Menores</p>
+        <form class="formulario">
+          <div class="formulario-bloque">
+            <div class="input-columna">
+              <div class="input-bloque">
+                <label for="desde">
+                  <p class="form-reserva">Desde</p>
+                </label>
                 <input
+                  class="fecha-personas"
+                  type="date"
+                  name="desde"
+                  id="desde"
+                  required
+                />
+              </div>
+
+              <div class="input-bloque">
+                <label for="hasta">
+                  <p class="form-reserva">Hasta</p>
+                </label>
+                <input
+                  class="fecha-personas"
+                  type="date"
+                  name="hasta"
+                  id="hasta"
+                  required
+                />
+              </div>
+
+              <div class="input-bloque">
+                <label for="menores">
+                  <p class="form-reserva">Menores</p>
+                </label>
+                <input
+                  class="fecha-personas"
                   type="number"
                   name="menores"
                   id="menores"
@@ -115,13 +132,14 @@
                   min="0"
                   required
                 />
-              </label>
-            </div>
+              </div>
 
-            <div class="form-5 adultos">
-              <label for="adultos">
-                <p class="form-reserva">Adultos</p>
+              <div class="input-bloque">
+                <label for="adultos">
+                  <p class="form-reserva">Adultos</p>
+                </label>
                 <input
+                  class="fecha-personas"
                   type="number"
                   name="adultos"
                   id="adultos"
@@ -129,79 +147,87 @@
                   min="1"
                   required
                 />
-              </label>
+              </div>
             </div>
 
-            <div class="form-6 nombre">
-              <label for="nombre">
-                <p class="form-reserva">Nombre</p>
-                <input
-                  type="text"
-                  name="nombre"
-                  id="nombre"
-                  placeholder="Ej. Maria"
-                  autocomplete="on"
-                  required
-                />
-              </label>
-            </div>
+            <div class="input-columna">
+              <div class="input-bloque">
+                <label for="nombre">
+                  <p class="form-reserva">Nombre</p>
+                  <input
+                    class="datos-personales"
+                    type="text"
+                    name="nombre"
+                    id="nombre"
+                    placeholder="Ej. Maria"
+                    autocomplete="on"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div class="form-7 apellido">
-              <label for="apellido">
-                <p class="form-reserva">Apellido</p>
-                <input
-                  type="text"
-                  name="apellido"
-                  id="apellido"
-                  placeholder="Ej.Pérez"
-                  autocomplete="on"
-                  required
-                />
-              </label>
-            </div>
+              <div class="input-bloque">
+                <label for="apellido">
+                  <p class="form-reserva">Apellido</p>
+                  <input
+                    class="datos-personales"
+                    type="text"
+                    name="apellido"
+                    id="apellido"
+                    placeholder="Ej.Pérez"
+                    autocomplete="on"
+                    required
+                  />
+                </label>
+              </div>
 
-            <div class="form-8 tel">
-              <label for="tel">
-                <p class="form-reserva">Teléfono</p>
-                <input
-                  type="tel"
-                  name="tel"
-                  id="tel"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  placeholder=" Ej 111-111-1111"
-                  autocomplete="on"
-                />
-              </label>
-            </div>
+              <div class="input-bloque">
+                <label for="tel">
+                  <p class="form-reserva">Teléfono</p>
+                  <input
+                    class="datos-personales"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder=" Ej 111-111-1111"
+                    autocomplete="on"
+                  />
+                </label>
+              </div>
 
-            <div class="form-9 email">
-              <label for="email">
-                <p class="form-reserva">Mail</p>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Ej.mariaperez@gmail.com"
-                  autocomplete="on"
-                />
-              </label>
+              <div class="input-bloque">
+                <label for="email">
+                  <p class="form-reserva">Mail</p>
+                  <input
+                    class="datos-personales"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Ej.mariaperez@gmail.com"
+                    autocomplete="on"
+                  />
+                </label>
+              </div>
             </div>
+          </div>
 
-            <div class="form-10 comentarios">
-              <textarea
-                name="comentarios"
-                id="comentarios"
-                cols="15"
-                rows="4"
-                placeholder="Comentario"
-              ></textarea>
-            </div>
-            <div class="form-11 enviar">
-              <input class="submit" type="submit" value="Enviar" />
-            </div>
-          </form>
+          <div class="comentario-bloque">
+            <textarea
+              class="textarea"
+              name="comentarios"
+              id="comentarios"
+              cols="15"
+              rows="4"
+              placeholder="Comentario"
+            ></textarea>
 
-          <div class="informacion">
+            <button class="submit" type="submit">Enviar</button>
+          </div>
+        </form>
+
+        <div class="informacion">
+          <div class="contacto">
             <h3 class="titulo-reservas">Contacto</h3>
             <ul>
               <li>
@@ -218,22 +244,23 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="ubicacion">
-          <h3>Inmejorable ubicación</h3>
-          <iframe
-            class="maps"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28276.145475821224!2d-48.48067063213793!3d-27.639435267221405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273c7a45caaf1b%3A0x45ba08dd85a69075!2sJoaquina%20Beach%20Hotel!5e0!3m2!1ses-419!2sar!4v1702488788922!5m2!1ses-419!2sar"
-            width="600"
-            height="120"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="ubicacion">
+            <h3>Inmejorable ubicación</h3>
+            <iframe
+              class="maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28276.145475821224!2d-48.48067063213793!3d-27.639435267221405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273c7a45caaf1b%3A0x45ba08dd85a69075!2sJoaquina%20Beach%20Hotel!5e0!3m2!1ses-419!2sar!4v1702488788922!5m2!1ses-419!2sar"
+              width="600"
+              height="120"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
+
     <footer>
       <h5 class="footer-subtitulo">NUESTRAS REDES SOCIALES</h5>
       <ul class="footer-redes">
